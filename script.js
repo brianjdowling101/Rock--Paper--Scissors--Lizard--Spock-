@@ -74,3 +74,8 @@ function enableOptions() {
     const optionsButtons = document.querySelectorAll(".options button");
     optionsButtons.forEach((button) => (button.disabled = false));
 }
+// Function to display the "play again" button
+function showPlayAgainButton() {
+    const playAgainButton = document.getElementById("play-again");
+    playAgainButton.style.display = "inline-block";
+}
