@@ -64,3 +64,8 @@ function resetGame() {
     enableOptions();
     hidePlayAgainButton();
 }
+// Function to disable the game options
+function disableOptions() {
+    const optionsButtons = document.querySelectorAll(".options button");
+    optionsButtons.forEach((button) => (button.disabled = true));
+}
