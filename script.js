@@ -10,3 +10,10 @@ let computerScore = 0;
 const playerScoreDisplay = document.getElementById("player-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const resultDisplay = document.getElementById("result");
+
+// Function to play a round of the game
+function playRound(playerSelection, computerSelection) {
+    // Find the indexes of player and computer selections in the options array
+    const playerIndex = options.indexOf(playerSelection);
+    const computerIndex = options.indexOf(computerSelection);
+}
