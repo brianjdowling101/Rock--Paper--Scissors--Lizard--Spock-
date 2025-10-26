@@ -18,3 +18,8 @@ body {
     padding: 1em;
     text-align: center;
 }
+
+/* Style the button hover effect in the buttons section */
+.buttons button:hover {
+    background-color: #1E88E5;
+}
