@@ -53,3 +53,14 @@ switch (resultIndex) {
 function computerPlay() {
     return options[Math.floor(Math.random() * options.length)];
 }
+
+// Function to reset the game scores and display
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreDisplay.textContent = playerScore;
+    computerScoreDisplay.textContent = computerScore;
+    resultDisplay.textContent = "";
+    enableOptions();
+    hidePlayAgainButton();
+}
