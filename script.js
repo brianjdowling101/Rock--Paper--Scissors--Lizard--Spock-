@@ -48,3 +48,8 @@ switch (resultIndex) {
         }
         return "Lose!";
 }
+
+// Function to randomly generate the computer's selection
+function computerPlay() {
+    return options[Math.floor(Math.random() * options.length)];
+}
