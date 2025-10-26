@@ -79,3 +79,8 @@ function showPlayAgainButton() {
     const playAgainButton = document.getElementById("play-again");
     playAgainButton.style.display = "inline-block";
 }
+// Function to hide the "play again" button
+function hidePlayAgainButton() {
+    const playAgainButton = document.getElementById("play-again");
+    playAgainButton.style.display = "none";
+}
