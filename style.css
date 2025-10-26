@@ -6,4 +6,15 @@
     padding: 0;
 }
 
-/* Set the font family for the body to sans-serif. */
+/* Set the font family for the body to sans-serif */
+body {
+    font-family: sans-serif;
+}
+
+/* Style the header section */
+.header {
+    background-color: #8BC34A;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
