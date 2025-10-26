@@ -23,3 +23,10 @@ body {
 .buttons button:hover {
     background-color: #1E88E5;
 }
+
+/* Center align the text and set the font size to 1em for the .rules class */
+.rules {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+}
