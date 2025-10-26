@@ -34,4 +34,17 @@ switch (resultIndex) {
             disableOptions();
             showPlayAgainButton();
         }
+        return "Win!";
+    // If the difference in indexes is 2 or 4, the computer wins the round
+    case 2:
+    case 4:
+        computerScore++;
+        computerScoreDisplay.textContent = computerScore;
+        // If the computer's score reaches 10, display lose message and disable options
+        if (computerScore === 10) {
+            resultDisplay.textContent = "You lose!";
+            disableOptions();
+            showPlayAgainButton();
+        }
+        return "Lose!";
 }
