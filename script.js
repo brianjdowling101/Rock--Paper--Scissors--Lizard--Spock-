@@ -69,3 +69,8 @@ function disableOptions() {
     const optionsButtons = document.querySelectorAll(".options button");
     optionsButtons.forEach((button) => (button.disabled = true));
 }
+// Function to enable the game options
+function enableOptions() {
+    const optionsButtons = document.querySelectorAll(".options button");
+    optionsButtons.forEach((button) => (button.disabled = false));
+}
