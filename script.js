@@ -89,3 +89,8 @@ const startButton = document.getElementById("start");
 startButton.addEventListener("click", () => {
     resetGame();
 });
+// Get the play again button element by its ID. Reset the game when clicked
+const playAgainButton = document.getElementById("play-again");
+playAgainButton.addEventListener("click", () => {
+    resetGame();
+});
