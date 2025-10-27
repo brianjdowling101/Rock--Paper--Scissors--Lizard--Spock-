@@ -94,3 +94,15 @@ const playAgainButton = document.getElementById("play-again");
 playAgainButton.addEventListener("click", () => {
     resetGame();
 });
+// Get all the options buttons.
+const optionsButtons = document.querySelectorAll(".options button");
+optionsButtons.forEach((button) =>
+    button.addEventListener("click", () => {
+        // Get the computer's selection
+        const computerSelection = computerPlay();
+        // Play a round with the player's selection and the computer's selection
+        const result = playRound(button.id, computerSelection);
+        // Display the result of the round
+        resultDisplay.textContent = result;
+    })
+)
