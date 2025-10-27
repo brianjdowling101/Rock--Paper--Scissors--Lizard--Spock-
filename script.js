@@ -84,3 +84,8 @@ function hidePlayAgainButton() {
     const playAgainButton = document.getElementById("play-again");
     playAgainButton.style.display = "none";
 }
+// Get the start button element by its ID. Reset the game when clicked
+const startButton = document.getElementById("start");
+startButton.addEventListener("click", () => {
+    resetGame();
+});
