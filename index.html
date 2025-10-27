@@ -1,82 +1,65 @@
-<!DOCTYPE html>
-<!-- Tells the browser this is an HTML5 document -->
+<!DOCTYPE html> <!-- HTML5 document type -->
+<html lang="en"> <!-- Start of HTML page. -->
 
-<html lang="en">
-<!-- Sets the language of the document to English -->
-
-<head>
-    <meta charset="UTF-8">
-    <!-- Sets character encoding so text displays correctly -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Makes the page responsive on all devices -->
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Ensures compatibility with older versions of Internet Explorer -->
-
-    <title>Rock, Paper, Scissors, Lizard, Spock!</title>
-    <!-- Sets the title of the page (shows in browser tab) -->
-
-    <link rel="stylesheet" href="style.css">
-    <!-- Links to your external CSS file -->
+<head> <!-- Head section -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsive -->
+    <title>Rock Paper Scissors Lizard Spock</title> <!-- Page title -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
 </head>
 
-<body>
-    <!-- Page content goes here -->
+<body> <!-- Body section -->
 
-    <script src="index.js"></script>
-    <!-- Links to your external JavaScript file -->
-
-    <div class="header"> <!-- Header section -->
-        <h1>Rock Paper Scissors Lizard Spock! 🖖</h1> <!-- Main heading -->
-        <p>First to 10 wins!</p> <!-- Subheading -->
+    <div class="header"> <!-- Game header -->
+        <h1>Rock Paper Scissors Lizard Spock</h1> <!-- Game title -->
+        <p>First to 15 wins!</p> <!-- Game rule summary -->
     </div>
-    <div class="scoreboard"> <!-- Scoreboard section -->
-        <div class="player-score"> <!-- Player score section -->
-            <h2>Player</h2> <!-- Player score heading -->
-            <p id="player-score">0</p> <!-- Player score value -->
+
+    <div class="scoreboard"> <!-- Scoreboard area -->
+        <div class="player-score"> <!-- Player score -->
+            <h2>Player</h2>
+            <p id="player-score">0</p>
         </div>
-        <div class="result"> <!-- Result section -->
-            <h2>Result</h2> <!-- Result heading -->
-            <p id="result"></p> <!-- Result message -->
+
+        <div class="result"> <!-- Game result -->
+            <h2>Result</h2>
+            <p id="result"></p>
+        </div>
+
+        <div class="computer-score"> <!-- Computer score -->
+            <h2>Computer</h2>
+            <p id="computer-score">0</p>
         </div>
     </div>
-    <div class="computer-score"> <!-- Computer score section -->
-        <h2>Computer</h2> <!-- Computer score heading -->
-        <p id="computer-score">0</p> <!-- Computer score value -->
-    </div>
-    <div class="options"> <!-- Options section -->
-        <button id="rock">Rock</button> <!-- Rock option -->
-        <button id="paper">Paper</button> <!-- Paper option -->
-        <button id="scissors">Scissors</button> <!-- Scissors option -->
-        <button id="lizard">Lizard</button> <!-- Lizard option -->
-        <button id="spock">Spock</button> <!-- Spock option -->
-    </div>
-    <div class="buttons"> <!-- Buttons section -->
-        <button id="start">Start</button> <!-- Start button -->
-        <button id="play-again">Play Again</button> <!-- Play again button -->
+
+    <div class="options"> <!-- Game options -->
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+        <button id="lizard">Lizard</button>
+        <button id="spock">Spock</button>
     </div>
 
-    <!-- Section for displaying the game rules -->
-    <section id="rules">
+    <div class="buttons"> <!-- Control buttons -->
+        <button id="start">Start</button>
+        <button id="play-again">Play Again</button>
+    </div>
 
-        <!-- Heading for the rules section -->
+    <section id="rules"> <!-- Game rules -->
         <h1>Rules</h1>
-
-        <!-- List of all the game rules -->
         <ul>
             <li>Rock beats scissors and lizard.</li>
             <li>Paper beats rock and Spock.</li>
             <li>Scissors beats paper and lizard.</li>
             <li>Lizard beats paper and Spock.</li>
             <li>Spock beats rock and scissors.</li>
-            <li>If both players choose the same gesture, it is a tie.</li>
-            <li>Each round, the winner of the round earns one point.</li>
-            <li>The game continues until one player reaches 10 points.</li>
+            <li>Same choice = tie.</li>
+            <li>Winner gets 1 point each round.</li>
+            <li>First to 15 points wins.</li>
         </ul>
-
     </section>
-    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+    <script src="script.js"></script> <!-- Link to JS file -->
 
 </body>
 
