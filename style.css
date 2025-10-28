@@ -198,3 +198,21 @@ body {
     background-attachment: fixed;
     /* Keeps image fixed on scroll */
 }
+
+/* Style the scores with red text and black background */
+#player-score,
+#computer-score,
+#result {
+    color: rgb(255, 255, 255);
+    /* Text color */
+    background-color: black;
+    /* Black patch behind text */
+    padding: 5px 10px;
+    /* Some spacing around the number */
+    border-radius: 5px;
+    /* Optional: rounded corners */
+    display: inline-block;
+    /* Keeps the black patch tight around the text */
+    font-weight: bold;
+    /* Makes the numbers stand out */
+}
