@@ -159,12 +159,20 @@ body {
 #rules {
     text-align: center;
     /* Center the heading and list text */
-    margin: 0 auto;
-    /* Center the whole section horizontally */
+    margin: 40px auto;
+    /* Add space around and center horizontally */
     max-width: 600px;
-    /* Optional: limit width for better readability */
+    /* Keep it nicely contained */
     padding: 20px;
-    /* Add space inside the section */
+    /* Space inside the box */
+    border: 2px solid #333;
+    /* Dark border line */
+    border-radius: 12px;
+    /* Rounded corners */
+    background-color: #f9f9f9;
+    /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
 }
 
 #rules ul {
