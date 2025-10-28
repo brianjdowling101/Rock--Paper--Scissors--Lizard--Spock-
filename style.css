@@ -155,3 +155,16 @@ body {
         font-size: 18px;
     }
 }
+
+.options {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    height: 100vh;
+    /* Make the container fill the full screen height */
+    gap: 10px;
+    /* Add space between the buttons */
+}
