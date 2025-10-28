@@ -158,13 +158,13 @@ body {
 
 #rules {
     text-align: center;
-    /* Center the heading and list text */
+    /* Center the heading */
     margin: 40px auto;
-    /* Add space around and center horizontally */
+    /* Space around and center horizontally */
     max-width: 600px;
-    /* Keep it nicely contained */
+    /* Keep box contained */
     padding: 20px;
-    /* Space inside the box */
+    /* Inner spacing */
     border: 2px solid #333;
     /* Dark border line */
     border-radius: 12px;
@@ -172,12 +172,16 @@ body {
     background-color: #f9f9f9;
     /* Light gray background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
+    /* Soft shadow */
 }
 
 #rules ul {
-    list-style-position: inside;
-    /* Keep bullet points close to text */
-    padding: 0;
-    /* Remove default list padding */
+    list-style-position: outside;
+    /* Bullets outside the text area */
+    padding-left: 40px;
+    /* Space for bullets to align text */
+    margin: 0;
+    /* Remove default margins */
+    text-align: left;
+    /* Keep text aligned under the bullet */
 }
