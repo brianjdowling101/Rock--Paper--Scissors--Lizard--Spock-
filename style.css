@@ -156,15 +156,20 @@ body {
     }
 }
 
-.rules {
-    display: flex;
-    /* Use flexbox layout */
-    justify-content: center;
-    /* Center items horizontally */
-    align-items: center;
-    /* Center items vertically */
-    height: 100vh;
-    /* Make the container fill the full screen height */
-    gap: 10px;
-    /* Add space between the buttons */
+#rules {
+    text-align: center;
+    /* Center the heading and list text */
+    margin: 0 auto;
+    /* Center the whole section horizontally */
+    max-width: 600px;
+    /* Optional: limit width for better readability */
+    padding: 20px;
+    /* Add space inside the section */
+}
+
+#rules ul {
+    list-style-position: inside;
+    /* Keep bullet points close to text */
+    padding: 0;
+    /* Remove default list padding */
 }
