@@ -185,3 +185,16 @@ body {
     text-align: left;
     /* Keep text aligned under the bullet */
 }
+
+body {
+    background-image: url('images/thebigband1.jpeg');
+    /* Path to your image */
+    background-size: cover;
+    /* Cover the whole page */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Don’t repeat the image */
+    background-attachment: fixed;
+    /* Keeps image fixed on scroll */
+}
