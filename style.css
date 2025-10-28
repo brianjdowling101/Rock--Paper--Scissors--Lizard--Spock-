@@ -156,7 +156,7 @@ body {
     }
 }
 
-.options {
+.rules {
     display: flex;
     /* Use flexbox layout */
     justify-content: center;
