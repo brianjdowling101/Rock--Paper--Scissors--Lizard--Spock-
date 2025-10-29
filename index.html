@@ -2,70 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> <!-- Character encoding for the page -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive on mobile -->
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8"> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures page is responsive on mobile -->
     <title>Rock Paper Scissors Lizard Spock</title> <!-- Browser tab title -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS for styling -->
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header section: contains the game title and a short instruction -->
+    <!-- Header Section: Game title and instructions -->
     <header>
         <div class="header">
-            <h1 style="color: black;">Paper Scissors Lizard Spock</h1> <!-- Game title -->
-            <p style="color: black;"><strong>First to 15 wins!</strong></p> <!-- Short game instruction -->
+            <h1 style="color: black;">Paper Scissors Lizard Spock</h1> <!-- Main game title -->
+            <p style="color: black;"><strong>First to 15 wins!</strong></p> <!-- Short instruction for the player -->
         </div>
     </header>
 
-    <!-- Scoreboard section: displays player score, computer score, and the result of the round -->
+    <!-- Scoreboard Section: Displays scores and round result -->
     <div class="scoreboard">
-        <!-- Player's score -->
+
+        <!-- Player's Score -->
         <div class="player-score">
+            <h2 style="font-weight: bold; color: black;">Player</h2>
             <h2 id="player-score"
                 style="color: white; font-weight: bold; background-color: black; padding: 5px; border-radius: 5px;">
-                0 <!-- Initial player score, updated by JavaScript -->
+                0 <!-- Initial player score, updated dynamically via JavaScript -->
             </h2>
         </div>
 
-        <!-- Result of each round -->
+        <!-- Result of the Current Round -->
         <div class="result">
+            <h2 style="font-weight: bold; color: black;">Vs</h2>
             <div id="result"
                 style="color: white; font-weight: bold; background-color: black; padding: 5px; border-radius: 5px;">
-                Win, Lose, or Tie? <!-- Placeholder text, will be updated by JavaScript -->
+                Win, Lose, or Tie? <!-- Placeholder text, updated via JavaScript after each round -->
             </div>
         </div>
 
-        <!-- Computer's score -->
+        <!-- Computer's Score -->
         <div class="computer-score">
+            <h2 style="font-weight: bold; color: black;">computer</h2>
             <h2 id="computer-score"
                 style="color: white; font-weight: bold; background-color: black; padding: 5px; border-radius: 5px;">
-                0 <!-- Initial computer score, updated by JavaScript -->
+                0 <!-- Initial computer score, updated dynamically via JavaScript -->
             </h2>
         </div>
     </div>
 
-    <!-- Game options: buttons for player to choose their move -->
+    <!-- Game Options: Buttons for player to choose their move -->
     <div class="options">
-        <!-- Each button has a unique ID to match JavaScript logic -->
-        <button id="rock">🤟 Rock</button>
-        <button id="paper">✋ Paper</button>
-        <button id="scissors">✌️ Scissors</button>
-        <button id="lizard">🦎 Lizard</button>
-        <button id="spock">🖖 Spock</button>
+        <button id="rock">🤟 Rock</button> <!-- Rock button -->
+        <button id="paper">✋ Paper</button> <!-- Paper button -->
+        <button id="scissors">✌️ Scissors</button> <!-- Scissors button -->
+        <button id="lizard">🦎 Lizard</button> <!-- Lizard button -->
+        <button id="spock">🖖 Spock</button> <!-- Spock button -->
     </div>
 
-    <!-- Control buttons -->
+    <!-- Control Buttons: Start or restart the game -->
     <div class="buttons">
-        <button id="start">Start</button> <!-- Starts a new game, resets scores -->
-        <button id="play-again" style="display: none;">Play Again</button> <!-- Shown when game ends to restart -->
+        <button id="start">Start</button> <!-- Starts a new game and resets scores -->
+        <button id="play-again" style="display: none;">Play Again</button>
+        <!-- Displayed when the game ends to restart -->
     </div>
 
-    <!-- Rules section: explains how the game works -->
+    <!-- Rules Section: Explains how the game works -->
     <section id="rules">
         <h1>Rules</h1>
         <ul>
-            <!-- Each list item explains how one option beats others -->
             <li>Rock beats scissors and lizard.</li>
             <li>Paper beats rock and Spock.</li>
             <li>Scissors beats paper and lizard.</li>
@@ -76,7 +82,7 @@
         </ul>
     </section>
 
-    <!-- Link to the JavaScript file which controls game logic and interactions -->
+    <!-- Link to the JavaScript file that handles game logic -->
     <script src="script.js"></script>
 
 </body>
