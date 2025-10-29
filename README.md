@@ -81,7 +81,19 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ### Accessibility Improvements
 
-### Browser Compatibility
+## 🌐 Browser Compatibility
+
+- Tested on:
+
+- Google Chrome
+
+- Mozilla Firefox
+
+- Microsoft Edge
+
+- Apple Safari
+
+- All browsers displayed consistent performance and visuals.
 
 ### Responsive Testing
 
