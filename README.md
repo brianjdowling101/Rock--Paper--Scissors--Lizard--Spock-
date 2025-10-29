@@ -119,6 +119,28 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ### Debugging
 
-### Technologies Used
+## 🧰 Technologies Used
+
+- HTML5 – Game structure and semantic markup
+
+- CSS3 – Styling, layout, and responsive design
+
+- JavaScript (ES6) – Game logic, interactivity, and DOM manipulation
+
+- Git & GitHub – Version control and repository management
+
+- GitHub Pages – Deployment and live hosting
+
+- Visual Studies– Initial design and layout planning
+
+- IAmResponsive – Responsive design testing across devices
+
+- Google Developer Tools (Lighthouse) – Accessibility, performance, and best practices testing
+
+- WAVE – Web accessibility evaluation
+
+- HTML & CSS Validators – W3C validation to ensure clean, standards-compliant code
+
+- JavaScript Validators – JSHint and other tools to check JS syntax and quality
 
 ### Credits
