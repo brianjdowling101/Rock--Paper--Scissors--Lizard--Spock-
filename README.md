@@ -31,7 +31,19 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - To deploy a well-tested, accessible, and visually appealing interactive website.
 
-### Developer-Focused
+### 💻 Developer-Focused
+
+- This project was created for the Dynamic Front-End Development Milestone to showcase:
+
+-  Document Object Model (DOM) manipulation using JavaScript.
+
+- Responsive layout using HTML5 and CSS3.
+
+- Conditional logic and event handling.
+
+- Accessibility and browser compatibility considerations.
+
+- Version control and deployment with GitHub Pages.
 
 ### Design Choices
 
