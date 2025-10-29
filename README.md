@@ -47,9 +47,21 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Version control and deployment with GitHub Pages.
 
-### Design Choices
+## 🎨 Design Choices
 
-### Wireframes Summary
+- Theme: Inspired by The Big Bang Theory’s pop-culture humor.
+
+- Color Scheme: Bright and contrasting colors to reflect the playful tone of the game.
+
+- Typography: Clean sans-serif fonts for modern readability.
+
+- Layout: Simple and centered design with clear buttons and score display.
+
+- Feedback: Dynamic results display (“You Win!”, “You Lose!”, “It’s a Tie!”) and score counters.
+
+## Wireframes Summary
+
+- Note to self: Add images
 
 ### Future Features
 
