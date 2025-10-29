@@ -1,115 +1,136 @@
-// Define an array of game options
-const options = ["rock", "paper", "scissors", "lizard", "spock"];
+// This ensures that JavaScript can access all elements safely
+document.addEventListener("DOMContentLoaded", () => {
 
-// Initialize player and computer scores
-let playerScore = 0;
-let computerScore = 0;
+    // ----------------------------
+    // Game options
+    // ----------------------------
+    const options = ["rock", "paper", "scissors", "lizard", "spock"]; // Choices available for the player and computer
 
-// Get DOM elements for displaying scores and result
-const playerScoreDisplay = document.getElementById("player-score");
-const computerScoreDisplay = document.getElementById("computer-score");
-const resultDisplay = document.getElementById("result");
+    // ----------------------------
+    // Game scores
+    // ----------------------------
+    let playerScore = 0; // Player's score
+    let computerScore = 0; // Computer's score
 
-// Function to play a round of the game
-function playRound(playerSelection, computerSelection) {
-    // Find the indexes of player and computer selections in the options array
-    const playerIndex = options.indexOf(playerSelection);
-    const computerIndex = options.indexOf(computerSelection);
+    // ----------------------------
+    // Get DOM elements
+    // ----------------------------
+    const playerScoreDisplay = document.getElementById("player-score"); // Shows player's score
+    const computerScoreDisplay = document.getElementById("computer-score"); // Shows computer's score
+    const resultDisplay = document.getElementById("result"); // Shows result of each round
+    const startButton = document.getElementById("start"); // Start game button
+    const playAgainButton = document.getElementById("play-again"); // Play again button
+    const optionButtons = document.querySelectorAll(".options button"); // All option buttons (rock, paper, etc.)
 
-    // Determine the result of the round based on the difference in indexes
-    const resultIndex = (playerIndex - computerIndex + 5) % 5;
-    switch (resultIndex) {
-        // If indexes are equal, the round is a tie
-        case 0:
-            return "Tie!";
-        // If the difference in indexes is 1 or 3, the player wins the round
-        case 1:
-        case 3:
-            playerScore++;
-            playerScoreDisplay.textContent = playerScore;
-            // If the player's score reaches 15, display win message and disable options
-            if (playerScore === 15) {
-                resultDisplay.textContent = "You win!";
-                disableOptions();
-                showPlayAgainButton();
-            }
-            return "Win!";
-        // If the difference in indexes is 2 or 4, the computer wins the round
-        case 2:
-        case 4:
-            computerScore++;
-            computerScoreDisplay.textContent = computerScore;
-            // If the computer's score reaches 15, display lose message and disable options
-            if (computerScore === 15) {
-                resultDisplay.textContent = "You lose!";
-                disableOptions();
-                showPlayAgainButton();
-            }
-            return "Lose!";
-    }
-}
-
-// Function to randomly generate the computer's selection
-function computerPlay() {
-    return options[Math.floor(Math.random() * options.length)];
-}
-
-// Function to reset the game scores and display
-function resetGame() {
-    playerScore = 0;
-    computerScore = 0;
-    playerScoreDisplay.textContent = playerScore;
-    computerScoreDisplay.textContent = computerScore;
-    resultDisplay.textContent = "";
-    enableOptions();
-    hidePlayAgainButton();
-}
-
-// Function to disable the game options
-function disableOptions() {
-    const optionsButtons = document.querySelectorAll(".options button");
-    optionsButtons.forEach((button) => (button.disabled = true));
-}
-
-// Function to enable the game options
-function enableOptions() {
-    const optionsButtons = document.querySelectorAll(".options button");
-    optionsButtons.forEach((button) => (button.disabled = false));
-}
-
-// Function to display the "play again" button
-function showPlayAgainButton() {
-    const playAgainButton = document.getElementById("play-again");
-    playAgainButton.style.display = "inline-block";
-}
-
-// Function to hide the "play again" button
-function hidePlayAgainButton() {
-    const playAgainButton = document.getElementById("play-again");
+    // Hide the "Play Again" button at the start
     playAgainButton.style.display = "none";
-}
 
-// Get the start button element by its ID.
-const startButton = document.getElementById("start");
-startButton.addEventListener("click", () => {
-    resetGame();
+    // ----------------------------
+    // Function: Play a round
+    // ----------------------------
+    // playerSelection: the player's choice (rock/paper/etc.)
+    // computerSelection: the computer's choice
+    function playRound(playerSelection, computerSelection) {
+        const playerIndex = options.indexOf(playerSelection); // Get index of player's choice
+        const computerIndex = options.indexOf(computerSelection); // Get index of computer's choice
+
+        // Calculate circular difference to determine winner
+        // Result mapping:
+        // 0 = tie, 1/3 = player wins, 2/4 = computer wins
+        const resultIndex = (playerIndex - computerIndex + 5) % 5;
+
+        if (resultIndex === 0) {
+            return "Tie!"; // Same choice
+        } else if (resultIndex === 1 || resultIndex === 3) {
+            playerScore++; // Player wins this round
+            updateScores(); // Update scoreboard
+            if (playerScore === 15) { // Check if player reached 15 points
+                endGame("You win!"); // End game if player wins
+            }
+            return "You win this round!";
+        } else {
+            computerScore++; // Computer wins this round
+            updateScores(); // Update scoreboard
+            if (computerScore === 15) { // Check if computer reached 15 points
+                endGame("You lose!"); // End game if computer wins
+            }
+            return "Computer wins this round!";
+        }
+    }
+
+    // ----------------------------
+    // Function: Update the scoreboard
+    // ----------------------------
+    function updateScores() {
+        playerScoreDisplay.textContent = playerScore; // Show player's score
+        computerScoreDisplay.textContent = computerScore; // Show computer's score
+    }
+
+    // ----------------------------
+    // Function: Computer randomly selects an option
+    // ----------------------------
+    function computerPlay() {
+        return options[Math.floor(Math.random() * options.length)]; // Random choice from options array
+    }
+
+    // ----------------------------
+    // Function: Disable all option buttons
+    // ----------------------------
+    function disableOptions() {
+        optionButtons.forEach(button => button.disabled = true); // Prevent clicking after game ends
+    }
+
+    // ----------------------------
+    // Function: Enable all option buttons
+    // ----------------------------
+    function enableOptions() {
+        optionButtons.forEach(button => button.disabled = false); // Allow clicking when game starts/resets
+    }
+
+    // ----------------------------
+    // Function: End the game
+    // ----------------------------
+    function endGame(message) {
+        resultDisplay.textContent = message; // Display win/lose message
+        disableOptions(); // Stop player from clicking options
+        playAgainButton.style.display = "inline-block"; // Show "Play Again" button
+    }
+
+    // ----------------------------
+    // Function: Reset the game
+    // ----------------------------
+    function resetGame() {
+        playerScore = 0; // Reset player score
+        computerScore = 0; // Reset computer score
+        updateScores(); // Update scoreboard
+        resultDisplay.textContent = ""; // Clear previous result
+        enableOptions(); // Enable option buttons
+        playAgainButton.style.display = "none"; // Hide "Play Again" button
+    }
+
+    // ----------------------------
+    // Event listeners
+    // ----------------------------
+
+    // Start button click: resets the game
+    startButton.addEventListener("click", () => {
+        resetGame();
+    });
+
+    // Play Again button click: resets the game after win/lose
+    playAgainButton.addEventListener("click", () => {
+        resetGame();
+    });
+
+    // Option buttons click: plays a round when player chooses an option
+    optionButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const playerSelection = button.id; // Get the player's choice
+            const computerSelection = computerPlay(); // Get computer's choice
+            const result = playRound(playerSelection, computerSelection); // Play a round
+            resultDisplay.textContent = result; // Display round result
+        });
+    });
+
 });
 
-// Get the play again button element by its ID.
-const playAgainButton = document.getElementById("play-again");
-playAgainButton.addEventListener("click", () => {
-    resetGame();
-});
-
-// Get all the options buttons.
-const optionsButtons = document.querySelectorAll(".options button");
-optionsButtons.forEach((button) =>
-    button.addEventListener("click", () => {
-        // Get the computer's selection
-        const computerSelection = computerPlay();
-        // Play a round with the player's selection and the computer's selection
-        const result = playRound(button.id, computerSelection);
-        // Display the result of the round
-        resultDisplay.textContent = result;
-    })
-)
