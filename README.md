@@ -3,6 +3,8 @@
 - A fun, interactive web-based game inspired by The Big Bang Theory TV show and the original Rock Paper Scissors Lizard Spock concept by Sam Kass.
 Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a challenging twist to the classic Rock Paper Scissors game.
 
+![image](images/thebigbang1.jpg)
+
 
 
 
