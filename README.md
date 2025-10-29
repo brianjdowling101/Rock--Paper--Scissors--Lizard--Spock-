@@ -11,7 +11,25 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ![image](images/homepagerules.png)
 
-### User Stories
+## 🧭 User Stories
+
+### External User Goals
+
+- I want to play a quick, fun, and visually appealing game.
+
+- I want clear instructions and feedback after every round.
+
+- I want to see my score update dynamically as I play.
+
+- I want the game to be responsive and work on mobile devices.
+
+## Site Owner Goals
+
+- To entertain users through an engaging and modern web game.
+
+- To demonstrate front-end development and JavaScript logic skills.
+
+- To deploy a well-tested, accessible, and visually appealing interactive website.
 
 ### Developer-Focused
 
