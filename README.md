@@ -83,7 +83,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ## 🌐 Browser Compatibility
 
-- Tested on:
+### Tested on:
 
 - Google Chrome
 
@@ -97,7 +97,23 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ### Responsive Testing
 
-### Deployment
+## 🚀 Deployment
+
+- Deployed via GitHub Pages.
+
+- Deployment Steps:
+
+- Commit and push all project files to the GitHub repository.
+
+- Navigate to Settings → Pages.
+
+- Under “Source,” select main branch and /root folder.
+
+- Click Save.
+
+- The site is now live at the provided GitHub Pages URL.
+
+- 🔗 Live Site: https://brianjdowling101.github.io/Rock--Paper--Scissors--Lizard--Spock-/
 
 ### Attribution
 
