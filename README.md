@@ -63,7 +63,15 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Note to self: Add images
 
-### Future Features
+## 🚀 Future Features
+
+- Best of 5 or Timed Challenge modes.
+
+- Sound effects and animations for win/loss events.
+
+- Local storage for tracking high scores.
+
+- Multiplayer mode or Boss difficulty levels. Take on different characther from the show.
 
 ### Testing
 
