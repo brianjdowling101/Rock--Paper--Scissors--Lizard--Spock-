@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // ----------------------------
     // Game scores
     // ----------------------------
-    let playerScore = 0; // Player's score
-    let computerScore = 0; // Computer's score
+    let playerScore = 0;
+    let computerScore = 0;
 
     // ----------------------------
     // Get DOM elements
@@ -123,14 +123,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Option buttons click: plays a round when player chooses an option
-    optionButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const playerSelection = button.id; // Get the player's choice
-            const computerSelection = computerPlay(); // Get computer's choice
-            const result = playRound(playerSelection, computerSelection); // Play a round
-            resultDisplay.textContent = result; // Display round result
+    for (let i = 0; i < optionButtons.length; i++) {
+        optionButtons[i].addEventListener("click", function () {
+            const playerSelection = this.id;
+            const computerSelection = computerPlay();
+            const result = playRound(playerSelection, computerSelection);
+            resultDisplay.textContent = result;
         });
-    });
-
+    }
 });
+
 
