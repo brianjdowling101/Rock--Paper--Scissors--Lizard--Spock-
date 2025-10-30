@@ -204,6 +204,100 @@ body {
 
 }
 
+/* ======= BOOKING FORM ======= */
+
+/* Container centering booking form */
+.booking-form-container {
+    display: flex;
+    /* Flexbox layout */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+/* Booking form styling */
+.booking-form {
+    background-color: #222;
+    /* Dark background */
+    padding: 30px;
+    /* Inner padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    max-width: 400px;
+    /* Max width */
+    width: 100%;
+    /* Full width up to max */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    /* Soft light shadow */
+}
+
+/* Booking form heading */
+.booking-form h2 {
+    text-align: center;
+    /* Center heading */
+    margin-bottom: 20px;
+    /* Space below heading */
+    font-weight: 700;
+    /* Bold text */
+    color: #f0f0f0;
+    /* Light gray text */
+}
+
+/* Labels for form fields */
+.booking-form label {
+    display: block;
+    /* Block display for full width */
+    margin-bottom: 5px;
+    /* Space below label */
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* Input fields and textarea styling */
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    /* Full width of container */
+    padding: 10px;
+    /* Inner padding */
+    margin-bottom: 15px;
+    /* Space below fields */
+    border: none;
+    /* Remove default borders */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #333;
+    /* Dark background */
+    color: #fff;
+    /* White text */
+}
+
+/* Focus styles for inputs and textarea */
+.booking-form input:focus,
+.booking-form textarea:focus {
+    outline: 2px solid #ffffff;
+    /* Highlight with outline */
+}
+
+/* Submit button styling to match banner button */
+.booking-form button {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Padding inside button */
+    background-color: #e63946;
+    /* Bright red background */
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* Hover effect for submit button */
+.booking-form button:hover {
+    background-color: #d62828;
+    /* Darker red on hover */
+}
+
 /* Media query for screens between 768px and 991px (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
     body {
