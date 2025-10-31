@@ -159,19 +159,19 @@
 
 
 
+    <section>
+        <script>
+            const form = document.getElementById('booking-form');
+            const container = form.parentElement; // .booking-form-container
 
-    <script>
-        const form = document.getElementById('booking-form');
-        const container = form.parentElement; // .booking-form-container
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent page reload.
 
-        form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent page reload.
+                // Replace form with success message
+                container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center; color:white; font-weight:bold;">Thanks! For the feedback!</p>';
 
-            // Replace form with success message
-            container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center; color:white; font-weight:bold;">Thanks! For the feedback!</p>';
-
-        });
-    </script>
+            });
+        </script>
 
     </section>
 
