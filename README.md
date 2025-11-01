@@ -164,6 +164,17 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ![image](images/Thankyoumessage.png)
 
+## Wireframe Diagram
+
+Here’s a visual representation of the layout and flow of the game:
+
+![image](images/thewireframediagram.jpg)
+
+- **Note:** This wireframe was made using Microsoft Word and hand-drawn sketches. It illustrates the structure of the header, main game, rules section, feedback form (footer).
+
+
+
+
 ## 🚀 Future Features
 
 - Best of 5 or Timed Challenge modes.
