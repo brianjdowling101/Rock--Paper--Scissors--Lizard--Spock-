@@ -103,6 +103,10 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Positioned at the top center of the page.
 
+![image](images/headersection.png)
+
+## Main Game Area (Body Section)
+
 - Main Game Area
 
 - Player Choice Buttons:
