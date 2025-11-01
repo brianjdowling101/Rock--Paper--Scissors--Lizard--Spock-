@@ -263,6 +263,17 @@ The game was designed with accessibility in mind, including:
 
 ### Responsive Testing
 
+The game was designed to be fully responsive across devices and screen sizes.
+
+![image](images/iamresponive.png)
+
+🛠 **Manual & Stress Testing**
+
+- The game was manually tested on multiple devices, including **desktop and mobile (landscape mode)**.  
+- Friends and peers played the game to simulate **real-world usage**.  
+- ✅ All tests passed: the game is **fully functional, readable, and responsive** under both normal and extended play sessions.
+
+
 ## 🚀 Deployment
 
 - Deployed via GitHub Pages.
