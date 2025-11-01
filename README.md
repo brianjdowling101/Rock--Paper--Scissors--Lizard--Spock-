@@ -279,4 +279,15 @@ No errors or warnings were found. The CSS fully conforms to W3C standards. W3C C
 
 - JavaScript Validators – JSHint and other tools to check JS syntax and quality
 
-### Credits
+## Credits & References
+
+This project was inspired by:
+
+- **The Big Bang Theory** – for introducing the “Rock, Paper, Scissors, Lizard, Spock” variation and its humor.  
+- **Star Trek** – for the futuristic, console-style design inspiration.  
+
+Special thanks and references:
+
+- **Code Institute Notes** – for HTML, CSS, and JavaScript guidance, particularly for building the feedback form.  
+- **Project Reference:** [Project 1 – Concrete Handbag by brianjdowling101](https://github.com/brianjdowling101/project-1-concrete-handbag) – used as inspiration for overall project structure and implementation.  
+- **YouTube Tutorial:** [Build this Rock Paper Scissors game with JavaScript!](https://www.youtube.com/watch?v=3uKdQx-SZ5A) – provided additional guidance and examples for game logic.  
