@@ -73,7 +73,8 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - A feedback form
 
-- 2. Page Layout Structure
+- Page Layout Structure
+
 ## Header Section
 
 - Title: “Rock, Paper, Scissors, Lizard, Spock”
@@ -98,6 +99,8 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Ongoing Score Counter: Player vs Computer
 
+![image](images/homepage1.png)
+
 
 ### 3. Rules Section
 
@@ -113,9 +116,15 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Spock smashes Scissors and vaporizes Rock
 
+![image](images/)
+
 ### 4. Feedback Form
 
-- Section or modal allowing players to share feedback about the game. Form Fields:
+- Section or modal allowing players to share feedback about the game.
+
+![image](images/feedbackformpt1.png)
+
+- Form Fields:
 
 - Name:
 
@@ -124,6 +133,8 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 - Message:
 
 - Submit Button triggers form validation and a thank-you message (e.g., “Thanks for your feedback!”)
+
+![image](images/feddbackformpt2.png)
 
 
 
