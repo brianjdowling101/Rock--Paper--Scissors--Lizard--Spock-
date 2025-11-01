@@ -59,9 +59,19 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Feedback: Dynamic results display (“You Win!”, “You Lose!”, “It’s a Tie!”) and score counters.
 
-## Wireframes Summary
+## 🎮 Wireframe Summary: Rock, Paper, Scissors, Lizard, Spock Game
 
-- Note to self: Add images
+1. Overview
+
+- A browser-based interactive game where players compete against the computer using the extended version of the classic Rock-Paper-Scissors rules — inspired by The Big Bang Theory TV show, where Sheldon Cooper popularized the “Rock, Paper, Scissors, Lizard, Spock” variation.
+
+- The interface includes:
+
+1. A gameplay section
+
+2. A rules/instructions panel
+
+3. A feedback form
 
 ## 🚀 Future Features
 
