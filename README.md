@@ -5,6 +5,13 @@
 - A fun, interactive web-based game inspired by The Big Bang Theory TV show and the original Rock Paper Scissors Lizard Spock concept by Sam Kass.
 Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a challenging twist to the classic Rock Paper Scissors game.
 
+### Fun Fact
+
+- **Star Trek** originally aired when colour TVs were becoming mainstream, which is why the costume colours were very vibrant and visually striking.  
+
+- Inspired by this, the **bright colour palette** in this project reflects that classic Star Trek aesthetic, giving the game a futuristic and energetic vibe.
+
+
 ![image](images/homepage1.png)
 
 - Players compete against the computer, aiming to reach 15 points first to win. Each round tests your luck, logic, and strategy in this expanded five-choice game.
