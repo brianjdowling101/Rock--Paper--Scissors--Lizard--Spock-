@@ -179,9 +179,6 @@ Here’s a visual representation of the layout and flow of the game:
 
 - **Note:** This wireframe was made using Microsoft Word and hand-drawn sketches. It illustrates the structure of the header, main game, rules section, feedback form (footer).
 
-
-
-
 ## 🚀 Future Features
 
 - Best of 5 or Timed Challenge modes.
@@ -214,15 +211,29 @@ No errors or warnings were found. The CSS fully conforms to W3C standards. W3C C
 
 ![image](images/js.hintpass.png)
 
-### Accessibility Testing
+## Accessibility Testing
 
-### Accessibility Improvements
+The game was designed with accessibility in mind, including:
+
+- **High-contrast coloUr schemes** for better readability.
+
+- **Readable fonts** for users with visual impairments and dyslexia.
+
+✅ **Lighthouse Accessibility Audit & Improvements**
+
+- Previously, the website had **3 contrast-related accessibility errors** identified by the WAVE accessibility checker. These issues affected text readability, particularly in the headings. Add black padding to resolve the issue.
+
+- All **3 contrast issues have now been fully resolved**.  
+- Text visibility and contrast have been improved across all areas to meet accessibility standards, ensuring a better experience for all users.
+
 
 - Designed for accessibility, it includes high-contrast colour schemes and readable fonts Lighthouse accessibility audit:
 
 - Previously, the website had 3 contrast-related accessibility errors identified by the WAVE accessibility checker. These issues affected text readability, particularly in the headings.
 
 -All 3 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
+
+![image](images/lighthousetesting.png)
 
 ## 🌐 Browser Compatibility
 
