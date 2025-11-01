@@ -240,9 +240,12 @@ The game was designed with accessibility in mind, including:
 
 ✅ **Accessibility Results**
 
-- ✅ No errors were detected in the WAVE tool report for the page:  
-  `https://wave.webaim.org/report#/https://brianjdowling101.github.io/Rock--Paper--Scissors--Lizard--Spock-/`.  
+- ✅ No errors were detected in the WAVE tool report for the page:
+
+- Link to Game: https://brianjdowling101.github.io/Rock--Paper--Scissors--Lizard--Spock-/
+
 - 🏆 AIM Score: 10 out of 10.  
+
 - ⚠️ Manual testing is still necessary to ensure full compliance and optimal accessibility.
 
 ![image](images/wave..png)
@@ -330,5 +333,5 @@ This project was inspired by:
 Special thanks and references:
 
 - **Code Institute Notes** – for HTML, CSS, and JavaScript guidance, particularly for building the feedback form.  
-- **Project Reference:** [Project 1 – Concrete Handbag by brianjdowling101](https://github.com/brianjdowling101/project-1-concrete-handbag) – used as inspiration for overall project structure and implementation.  
+- **Project Reference:** [Project 1 – Concrete Handbag by brianjdowling101](https://github.com/brianjdowling101/project-1-concrete-handbag) – used as inspiration for overall project structure and implementation. Very useful for Feedback from. Note: This Concrete Handbag is a pass project of Mine.
 - **YouTube Tutorial:** [Build this Rock Paper Scissors game with JavaScript!](https://www.youtube.com/watch?v=3uKdQx-SZ5A) – provided additional guidance and examples for game logic.  
