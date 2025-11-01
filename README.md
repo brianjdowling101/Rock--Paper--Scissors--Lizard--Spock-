@@ -158,10 +158,11 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Message:
 
-- Submit Button triggers form validation and a thank-you message (e.g., “Thanks for your feedback!”)
-
 ![image](images/feddbackformpt2.png)
 
+- Submit Button triggers form validation and a thank-you message (e.g., “Thanks for your feedback!”)
+
+![image](images/Thankyoumessage.png)
 
 ## 🚀 Future Features
 
