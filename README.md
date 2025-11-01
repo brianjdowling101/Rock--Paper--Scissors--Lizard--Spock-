@@ -15,6 +15,20 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ## 🧭 User Stories
 
+### 🎮 As a Player
+
+- I want to easily understand and access the game rules, so I can quickly learn how each move interacts with the others.
+
+- I want to select my choice (Rock, Paper, Scissors, Lizard, or Spock) with a single tap or click, so gameplay feels fast and smooth.
+
+- I want to see instant feedback (win, lose, or draw), so I know how I performed each round.
+
+- I want the game to track my score in real-time, so I can challenge myself and aim for higher results.
+
+- I want to play comfortably on my phone in landscape mode, as it feels like operating a futuristic Star Trek control panel — the perfect setup for a Big Bang Theory-inspired experience.
+
+- I want the interface to be responsive and visually engaging, with animations and sounds that enhance the sci-fi theme.
+
 ### External User Goals
 
 - I want to play a quick, fun, and visually appealing game.
