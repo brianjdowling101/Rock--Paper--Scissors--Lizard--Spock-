@@ -49,15 +49,21 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 ## 🎨 Design Choices
 
-- Theme: Inspired by The Big Bang Theory’s pop-culture humor.
+- Theme: Inspired by The Big Bang Theory’s pop-culture humor and Star Trek:
 
-- Color Scheme: Bright and contrasting colors to reflect the playful tone of the game.
+- Colour Scheme: Bright and contrasting colors to reflect the playful tone of the game.
 
 - Typography: Clean sans-serif fonts for modern readability.
 
 - Layout: Simple and centered design with clear buttons and score display.
 
 - Feedback: Dynamic results display (“You Win!”, “You Lose!”, “It’s a Tie!”) and score counters.
+
+- The interface embraces a sci-fi aesthetic. A clean lines, bold icons, and dynamic animations.
+
+- Landscape mode on mobile is a creative choice:
+
+- It evokes the feel of a futuristic gaming console or starship control screen, aligning with the Star Trek and Big Bang Theory inspiration.
 
 ## 🎮 Wireframe Summary: Rock, Paper, Scissors, Lizard, Spock Game
 
@@ -135,7 +141,6 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 - Submit Button triggers form validation and a thank-you message (e.g., “Thanks for your feedback!”)
 
 ![image](images/feddbackformpt2.png)
-
 
 
 ## 🚀 Future Features
