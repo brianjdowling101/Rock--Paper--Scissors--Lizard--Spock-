@@ -67,11 +67,65 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - The interface includes:
 
-1. A gameplay section
+- A gameplay section
 
-2. A rules/instructions panel
+- A rules/instructions panel
 
-3. A feedback form
+- A feedback form
+
+- 2. Page Layout Structure
+## Header Section
+
+- Title: “Rock, Paper, Scissors, Lizard, Spock”
+
+- Positioned at the top center of the page.
+
+- Main Game Area
+
+- Player Choice Buttons:
+
+- 5 interactive icons or buttons: 🤘 Rock, 📄 Paper, ✌️ Scissors, 🦎 Lizard, 🖖 Spock
+
+- Each button triggers a JavaScript function to record the player’s choice.
+
+- Computer Choice Display:
+
+- Area showing the computer’s randomly generated choice (e.g., “Computer chose Spock!”).
+
+- Results Display / Scoreboard:
+
+- Text area or card showing round result (“You Win!”, “You Lose!”, “It’s a Draw!”)
+
+- Ongoing Score Counter: Player vs Computer
+
+
+### 3. Rules Section
+
+- Expandable or static box listing all rule interactions:
+
+- Rock crushes Scissors and Lizard
+
+- Paper covers Rock and disproves Spock
+
+- Scissors cuts Paper and decapitates Lizard
+
+- Lizard eats Paper and poisons Spock
+
+- Spock smashes Scissors and vaporizes Rock
+
+### 4. Feedback Form
+
+- Section or modal allowing players to share feedback about the game. Form Fields:
+
+- Name:
+
+- Email:
+
+- Message:
+
+- Submit Button triggers form validation and a thank-you message (e.g., “Thanks for your feedback!”)
+
+
 
 ## 🚀 Future Features
 
