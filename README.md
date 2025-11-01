@@ -97,6 +97,12 @@ No errors or warnings were found. The CSS fully conforms to W3C standards. W3C C
 
 ### Accessibility Improvements
 
+- Designed for accessibility, it includes high-contrast colour schemes and readable fonts Lighthouse accessibility audit:
+
+- Previously, the website had 3 contrast-related accessibility errors identified by the WAVE accessibility checker. These issues affected text readability, particularly in the headings.
+
+-All 3 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
+
 ## 🌐 Browser Compatibility
 
 ### Tested on:
