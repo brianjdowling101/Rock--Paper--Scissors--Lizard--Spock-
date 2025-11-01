@@ -80,18 +80,18 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 - W3C HTML Validator: All pages now pass validation.
 Previously, three stray code errors were detected and have since been corrected. The site now validates with zero errors.
 
-![image](images/homepagerules.png)
+![image](images/js.hintpass.png)
 
 - W3C CSS Validator All pages now pass validation.
 No errors or warnings were found. The CSS fully conforms to W3C standards. W3C CSS Validator:
 
-![image](images/homepagerules.png)
+![image](images/csspass.png)
 
 - JavaScript code now passes the validator. Previously, there were 22 warnings reported. They have since been corrected. 
 
-![image](images/homepagerules.png)
+![image](images/javascript2pass.png)
 
-![image](images/homepagerules.png)
+![image](images/js.hintpass.png)
 
 ### Accessibility Testing
 
