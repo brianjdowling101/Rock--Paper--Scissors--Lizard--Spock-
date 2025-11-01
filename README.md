@@ -116,11 +116,11 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Spock smashes Scissors and vaporizes Rock
 
-![image](images/)
+![image](images/rules.png)
 
 ### 4. Feedback Form
 
-- Section or modal allowing players to share feedback about the game.
+- Section or modal allowing players to share feedback about the game. An arrow points down to the feedback form.
 
 ![image](images/feedbackformpt1.png)
 
@@ -147,6 +147,8 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 - Local storage for tracking high scores.
 
 - Multiplayer mode or Boss difficulty levels. Take on different characther from the show.
+
+- Enhanced Footer Bar — add themed social media icons, copyright mark, and maybe character quotes.
 
 ### Testing
 
