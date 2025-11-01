@@ -198,14 +198,16 @@ Here’s a visual representation of the layout and flow of the game:
 - W3C HTML Validator: All pages now pass validation.
 Previously, three stray code errors were detected and have since been corrected. The site now validates with zero errors.
 
-![image](images/js.hintpass.png)
+- W3C HTML Validator pass validation. No errors or warnings were found. The site now validates with zero errors.
 
-- W3C CSS Validator All pages now pass validation.
-No errors or warnings were found. The CSS fully conforms to W3C standards. W3C CSS Validator:
+![image](images/htmlpass.png)
+
+
+- W3C CSS Validator pass validation. No errors or warnings were found. The site now validates with zero errors.  
 
 ![image](images/csspass.png)
 
-- JavaScript code now passes the validator. Previously, there were 22 warnings reported. They have since been corrected. 
+- JavaScript code now passes the validator. Previously, there were 22 warnings reported. They have since been corrected. The site now validates with zero errors.
 
 ![image](images/javascript2pass.png)
 
@@ -218,6 +220,7 @@ The game was designed with accessibility in mind, including:
 - **High-contrast coloUr schemes** for better readability.
 
 - **Readable fonts** for users with visual impairments and dyslexia.
+
 
 ✅ **Lighthouse Accessibility Audit & Improvements**
 
@@ -234,6 +237,15 @@ The game was designed with accessibility in mind, including:
 -All 3 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
 
 ![image](images/lighthousetesting.png)
+
+✅ **Accessibility Results**
+
+- ✅ No errors were detected in the WAVE tool report for the page:  
+  `https://wave.webaim.org/report#/https://brianjdowling101.github.io/Rock--Paper--Scissors--Lizard--Spock-/`.  
+- 🏆 AIM Score: 10 out of 10.  
+- ⚠️ Manual testing is still necessary to ensure full compliance and optimal accessibility.
+
+![image](images/wave..png)
 
 ## 🌐 Browser Compatibility
 
