@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = ["rock", "paper", "scissors", "lizard", "spock"];
     const WINNING_SCORE = 15;
 
+    const winsAgainst = {
+        rock: ['scissors', 'lizard'],
+        paper: ['rock', 'spock'],
+        scissors: ['paper', 'lizard'],
+        lizard: ['paper', 'spock'],
+        spock: ['rock', 'scissors'],
+    };
+
     // ----------------------------
     // Game state
     // ----------------------------
@@ -23,11 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const computerScoreDisplay = document.getElementById("computer-score");
     const resultDisplay = document.getElementById("result");
     const startButton = document.getElementById("start");
-    const playAgainButton = document.getElementById("play-again");
     const optionButtons = document.querySelectorAll(".options button");
 
-    // Hide "Play Again" initially
-    playAgainButton.style.display = "none";
     disableOptions(); // disable options until game starts
 
     // ----------------------------
@@ -35,24 +40,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // ----------------------------
 
     function playRound(playerSelection, computerSelection) {
-        const playerIndex = options.indexOf(playerSelection);
-        const computerIndex = options.indexOf(computerSelection);
-        const resultIndex = (playerIndex - computerIndex + 5) % 5;
+        // Checks against the results
 
-        if (resultIndex === 0) {
+        // tie
+        if (playerSelection === computerSelection) {
             return `Tie! You both chose ${playerSelection}.`;
-        } else if (resultIndex === 1 || resultIndex === 3) {
+        }
+
+        // player wins
+        if (winsAgainst[playerSelection].includes(computerSelection)) {
             playerScore++;
             updateScores();
             if (playerScore === WINNING_SCORE) {
-                endGame("🎉 You win the game!");
+                endGame('🎉 You win the game!');
             }
             return `You win this round! ${playerSelection} beats ${computerSelection}.`;
         } else {
+            // computer wins
             computerScore++;
             updateScores();
             if (computerScore === WINNING_SCORE) {
-                endGame("💀 You lose the game!");
+                endGame('💀 You lose the game!');
             }
             return `Computer wins this round! ${computerSelection} beats ${playerSelection}.`;
         }
@@ -78,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function endGame(message) {
         resultDisplay.textContent = message;
         disableOptions();
-        playAgainButton.style.display = "inline-block";
     }
 
     function resetGame() {
@@ -87,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
         updateScores();
         resultDisplay.textContent = "";
         enableOptions();
-        playAgainButton.style.display = "none";
     }
 
     // ----------------------------
@@ -95,12 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // ----------------------------
 
     startButton.addEventListener("click", () => {
+        startButton.textContent = "Restart";
         resetGame();
         enableOptions();
-    });
-
-    playAgainButton.addEventListener("click", () => {
-        resetGame();
     });
 
     for (let i = 0; i < optionButtons.length; i++) {
@@ -114,6 +117,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 }
 );
+
+
+
+const form = document.getElementById('booking-form');
+const container = form.parentElement; // .booking-form-container
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent page reload.
+
+    // Replace form with success message
+    container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center; color:white; font-weight:bold;">Thanks! For the feedback!</p>';
+
+});
 
 
 
