@@ -211,27 +211,35 @@ p {
 }
 
 /* ==== Media Queries ==== */
+
+/* Small screens: phones (width ≤ 767px) */
 @media (max-width: 767px) {
     body {
+        /* Smaller base font size for small displays */
         font-size: 14px;
     }
 }
 
+/* Medium screens: tablets (768px–991px) */
 @media (min-width: 768px) and (max-width: 991px) {
     body {
+        /* Moderate font size for tablet-sized screens */
         font-size: 16px;
     }
 }
 
+/* Large screens: desktops (width ≥ 992px) */
 @media (min-width: 992px) {
     body {
+        /* Larger font size for comfortable desktop reading */
         font-size: 18px;
     }
 }
 
-/* Change options layout on large screens */
+/* Layout adjustment for options section on wider screens (≥ 975px) */
 @media (min-width: 975px) {
     .options {
+        /* Display options horizontally instead of stacked vertically */
         flex-direction: row;
     }
 }
