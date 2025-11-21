@@ -10,12 +10,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = ["rock", "paper", "scissors", "lizard", "spock"];
     const WINNING_SCORE = 15;
 
+    // Mapping of each choice to the choices it can defeat
     const winsAgainst = {
-        rock: ['scissors', 'lizard'],
-        paper: ['rock', 'spock'],
-        scissors: ['paper', 'lizard'],
-        lizard: ['paper', 'spock'],
-        spock: ['rock', 'scissors'],
+        rock: [
+            'scissors', // Rock crushes scissors
+            'lizard'    // Rock crushes lizard
+        ],
+        paper: [
+            'rock',     // Paper covers rock
+            'spock'     // Paper disproves Spock
+        ],
+        scissors: [
+            'paper',    // Scissors cut paper
+            'lizard'    // Scissors decapitate lizard
+        ],
+        lizard: [
+            'paper',    // Lizard eats paper
+            'spock'     // Lizard poisons Spock
+        ],
+        spock: [
+            'rock',     // Spock vaporizes rock
+            'scissors'  // Spock smashes scissors
+        ],
     };
 
     // ----------------------------
