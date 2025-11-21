@@ -81,10 +81,7 @@
             <li>First to 15 points wins.</li>
         </ul>
     </section>
-    <div>
-        <!-- Link to the JavaScript file that handles game logic -->
-        <script src="assets/script/script.js"></script>
-    </div>
+
 
 
     <footer>
@@ -159,21 +156,25 @@
 
 
 
-
         <div>
-            <script>
-                const form = document.getElementById('booking-form');
-                const container = form.parentElement; // .booking-form-container
+            <!-- Link to the JavaScript file that handles game logic -->
+            <script src="assets/script/script.js"></script>
 
-                form.addEventListener('submit', function (event) {
-                    event.preventDefault(); // Prevent page reload.
+            <div>
+                <script>
+                    const form = document.getElementById('booking-form');
+                    const container = form.parentElement; // .booking-form-container
 
-                    // Replace form with success message
-                    container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center; color:white; font-weight:bold;">Thanks! For the feedback!</p>';
+                    form.addEventListener('submit', function (event) {
+                        event.preventDefault(); // Prevent page reload.
 
-                });
-            </script>
+                        // Replace form with success message
+                        container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center; color:white; font-weight:bold;">Thanks! For the feedback!</p>';
 
+                    });
+
+                </script>
+            </div>
         </div>
 
 
