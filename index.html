@@ -2,66 +2,64 @@
 <html lang="en">
 
 <head>
-    <!-- Metadata about the document -->
-    <meta charset="UTF-8"> <!-- Sets character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures page is responsive on mobile -->
+    <!-- Metadata -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsive -->
     <title>Rock Paper Scissors Lizard Spock</title> <!-- Browser tab title -->
 
-    <!-- Link to external CSS file for styling -->
+    <!-- CSS: External stylesheet for styling elements -->
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
 <body>
 
-    <!-- Header Section: Game title and instructions -->
+    <!-- Header: Title and instructions -->
     <header class="header">
-        <h1>Rock Paper Scissors Lizard Spock</h1> <!-- Main game title -->
-        <p><strong>First to 15 wins!</strong></p> <!-- Short instruction for the player -->
+        <h1>Rock Paper Scissors Lizard Spock</h1> <!-- Main heading -->
+        <p><strong>First to 15 wins!</strong></p> <!-- Game goal for players -->
     </header>
 
-    <!-- Scoreboard Section: Displays scores and round result -->
+    <!-- Scoreboard: Shows player and computer scores, plus round result -->
     <div class="scoreboard">
 
-        <!-- Player's Score -->
+        <!-- Player Score -->
         <div class="player-score">
             <h2 class="score-title">Player</h2>
-            <h2 id="player-score" class="score-box">0 <!-- Initial player score, updated dynamically via JavaScript -->
-            </h2>
+            <!-- JS will dynamically update the innerText as player earns points -->
+            <h2 id="player-score" class="score-box">0</h2>
         </div>
 
-        <!-- Result of the Current Round -->
+        <!-- Round Result -->
         <div class="result">
             <h2 class="score-title">Vs</h2>
-            <div id="result" class="score-box">Win, Lose, or Tie?
-                <!-- Placeholder text, updated via JavaScript after each round -->
-            </div>
+            <!-- Placeholder text, JS will replace with "Win", "Lose", or "Tie" -->
+            <div id="result" class="score-box">Win, Lose, or Tie?</div>
         </div>
 
-        <!-- Computer's Score -->
+        <!-- Computer Score -->
         <div class="computer-score">
             <h2 class="score-title">Computer</h2>
-            <h2 id="computer-score" class="score-box">0
-                <!-- Initial computer score, updated dynamically via JavaScript -->
-            </h2>
+            <!-- JS will dynamically update the innerText as computer earns points -->
+            <h2 id="computer-score" class="score-box">0</h2>
         </div>
     </div>
 
-    <!-- Game Options: Buttons for player to choose their move -->
+    <!-- Game Option Buttons: Each button has an ID so JS can detect the choice -->
     <div class="options">
-        <button id="rock">🤟 Rock</button> <!-- Rock button -->
-        <button id="paper">✋ Paper</button> <!-- Paper button -->
-        <button id="scissors">✌️ Scissors</button> <!-- Scissors button -->
-        <button id="lizard">🦎 Lizard</button> <!-- Lizard button -->
-        <button id="spock">🖖 Spock</button> <!-- Spock button -->
+        <button id="rock">🤟 Rock</button>
+        <button id="paper">✋ Paper</button>
+        <button id="scissors">✌️ Scissors</button>
+        <button id="lizard">🦎 Lizard</button>
+        <button id="spock">🖖 Spock</button>
     </div>
 
     <!-- Control Buttons: Start or restart the game -->
     <div class="buttons">
-        <button id="start">Start</button> <!-- Starts a new game and resets scores -->
-        <button id="play-again" class="hidden">Play Again</button> <!-- Displayed when the game ends to restart -->
+        <button id="start">Start</button> <!-- Resets scores and enables option buttons -->
+        <button id="play-again" class="hidden">Play Again</button> <!-- Shown after someone reaches 15 points -->
     </div>
 
-    <!-- Rules Section: Explains how the game works -->
+    <!-- Rules Section -->
     <section id="rules">
         <h2>Rules</h2>
         <ul>
@@ -75,65 +73,127 @@
         </ul>
     </section>
 
+    <!-- Feedback Form Section -->
     <footer>
-
-        <!-- Contact form section with buttons -->
         <section id="contact" class="contact-section">
-
-            <!-- Contact Section Heading -->
             <h2 class="contact-title">🎮 <strong>Rock Paper Scissors Lizard Spock Game Feedback Form</strong></h2>
-
-            <!-- Introductory paragraph encouraging users to reach out -->
             <div class="contact-intro">
                 <strong>
-                    Thank you for playing my game!<br><br>
-                    Please take a moment to share your thoughts. Your feedback helps me improve future versions.<br>
-                    Just drop us a message below!<br>
+                    Thank you for playing my game!<br>
+                    Your feedback helps me improve future versions.<br>
+                    Drop us a message below!<br>
                 </strong>
-                <!-- Down arrow symbol pointing to the form -->
                 <div class="arrow">&#8595;</div>
             </div>
 
-            <!-- Container for the contact form -->
             <div class="booking-form-container">
                 <form id="booking-form" class="booking-form" autocomplete="on">
-
-                    <!-- Name input field -->
                     <label for="name" class="form-label">Name:</label>
                     <input type="text" id="name" name="Name" required autocomplete="name" class="form-input">
 
-                    <!-- Email input field -->
                     <label for="email" class="form-label">Email:</label>
                     <input type="email" id="email" name="Email" required autocomplete="email" class="form-input">
 
-                    <!-- Message textarea field -->
                     <label for="message" class="form-label">Message:</label>
                     <textarea id="message" name="Message" rows="5" required class="form-textarea"></textarea>
 
-                    <!-- Submit button -->
                     <button type="submit" class="submit-btn">Submit</button>
                 </form>
             </div>
 
-            <!-- Decorative rock-on emoji centered below the form -->
             <div class="emoji-row">🤘✋✌️🦎🖖</div>
         </section>
 
-        <!-- Link to the JavaScript file that handles game logic -->
+        <!-- External JS for game logic -->
         <script src="assets/script/script.js"></script>
 
+        <!-- Inline JS: Handles feedback form submission -->
         <script>
+            // Select the form element
             const form = document.getElementById('booking-form');
-            const container = form.parentElement; // .booking-form-container
+            const container = form.parentElement; // Parent container for form replacement
 
+            // Listen for submit event
             form.addEventListener('submit', function (event) {
-                event.preventDefault(); // Prevent page reload.
+                event.preventDefault(); // Prevent page reload
 
-                // Replace form with success message
+                // Replace form with a success message
                 container.innerHTML = '<p class="feedback-success">Thanks! For the feedback!</p>';
             });
         </script>
 
+        <!-- Inline Game Logic Example -->
+        <script>
+            // Grab all option buttons
+            const options = document.querySelectorAll('.options button');
+            const playerScoreEl = document.getElementById('player-score');
+            const computerScoreEl = document.getElementById('computer-score');
+            const resultEl = document.getElementById('result');
+
+            // Initialize scores
+            let playerScore = 0;
+            let computerScore = 0;
+
+            // Map of which option beats which
+            const rules = {
+                rock: ['scissors', 'lizard'],
+                paper: ['rock', 'spock'],
+                scissors: ['paper', 'lizard'],
+                lizard: ['paper', 'spock'],
+                spock: ['rock', 'scissors']
+            };
+
+            // Function to pick a random choice for the computer
+            function getComputerChoice() {
+                const choices = Object.keys(rules);
+                return choices[Math.floor(Math.random() * choices.length)];
+            }
+
+            // Function to play a round
+            function playRound(playerChoice) {
+                const computerChoice = getComputerChoice();
+
+                // Check for tie
+                if (playerChoice === computerChoice) {
+                    resultEl.innerText = 'Tie!';
+                    return;
+                }
+
+                // Check if player wins
+                if (rules[playerChoice].includes(computerChoice)) {
+                    playerScore++;
+                    playerScoreEl.innerText = playerScore;
+                    resultEl.innerText = `You Win! ${playerChoice} beats ${computerChoice}`;
+                } else {
+                    computerScore++;
+                    computerScoreEl.innerText = computerScore;
+                    resultEl.innerText = `You Lose! ${computerChoice} beats ${playerChoice}`;
+                }
+
+                // Check for end of game
+                if (playerScore === 15 || computerScore === 15) {
+                    resultEl.innerText += ' Game Over!';
+                    document.getElementById('play-again').classList.remove('hidden'); // Show restart button
+                    options.forEach(button => button.disabled = true); // Disable option buttons
+                }
+            }
+
+            // Add event listeners to each button
+            options.forEach(button => {
+                button.addEventListener('click', () => playRound(button.id));
+            });
+
+            // Restart button logic
+            document.getElementById('play-again').addEventListener('click', () => {
+                playerScore = 0;
+                computerScore = 0;
+                playerScoreEl.innerText = playerScore;
+                computerScoreEl.innerText = computerScore;
+                resultEl.innerText = 'Win, Lose, or Tie?';
+                document.getElementById('play-again').classList.add('hidden');
+                options.forEach(button => button.disabled = false);
+            });
+        </script>
     </footer>
 </body>
 
