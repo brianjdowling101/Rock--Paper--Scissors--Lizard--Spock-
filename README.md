@@ -88,6 +88,23 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - It evokes the feel of a futuristic gaming console or starship control screen, aligning with the Star Trek and Big Bang Theory inspiration.
 
+## User Story Testing ✅
+- Each user story was tested to ensure the game meets both player and site owner expectations:
+
+### Player-Focused Testing
+- **Understand and access game rules:** The rules were easy to find and understand. ✅ Pass
+- **Select choice with one tap/click:** Click of a button: Rock, Paper, Scissors, Lizard, and Spock. ✅ Pass
+- **See instant feedback:** Played rounds and observed results in real time. ✅ Pass
+- **Track score in real-time:** Verified the score updated correctly after each round. ✅ Pass
+
+### Device & Interface Testing
+- **Mobile landscape mode support:** Opened the game on various mobile devices in landscape mode. ✅ Pass
+- **Responsive and visually engaging interface:** Tested layout on desktop, tablet, and mobile. ✅ Pass
+- **Clear instructions and feedback:** Played rounds and confirmed messages displayed correctly. ✅ Pass
+
+> All user stories have been verified to ensure a smooth, engaging, and accessible gameplay experience.
+
+
 ## 🎮 Wireframe Summary: Rock, Paper, Scissors, Lizard, Spock Game
 
 1. Overview
