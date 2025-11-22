@@ -158,7 +158,7 @@ const container = form.parentElement; // Container of the form
 form.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent default page reload
 
-    // Replace form HTML with a simple thank-you message
+    // Thank-you message
     container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center; color:white; font-weight:bold;">Thanks! For the feedback!</p>';
 });
 
