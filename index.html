@@ -83,24 +83,29 @@
                     Your feedback helps me improve future versions.<br>
                     Drop us a message below!<br>
                 </strong>
-                <div class="arrow">&#8595;</div>
+                <div class="arrow">&#8595;</div> <!-- Decorative arrow pointing to form -->
             </div>
 
             <div class="booking-form-container">
                 <form id="booking-form" class="booking-form" autocomplete="on">
+                    <!-- Name input field -->
                     <label for="name" class="form-label">Name:</label>
                     <input type="text" id="name" name="Name" required autocomplete="name" class="form-input">
 
+                    <!-- Email input field -->
                     <label for="email" class="form-label">Email:</label>
                     <input type="email" id="email" name="Email" required autocomplete="email" class="form-input">
 
+                    <!-- Message textarea -->
                     <label for="message" class="form-label">Message:</label>
                     <textarea id="message" name="Message" rows="5" required class="form-textarea"></textarea>
 
+                    <!-- Submit button -->
                     <button type="submit" class="submit-btn">Submit</button>
                 </form>
             </div>
 
+            <!-- Decorative emojis row -->
             <div class="emoji-row">🤘✋✌️🦎🖖</div>
         </section>
 
@@ -109,33 +114,34 @@
 
         <!-- Inline JS: Handles feedback form submission -->
         <script>
-            // Select the form element
+            // Select the feedback form
             const form = document.getElementById('booking-form');
-            const container = form.parentElement; // Parent container for form replacement
+            const container = form.parentElement; // Parent container for replacing form after submission
 
-            // Listen for submit event
+            // Listen for form submit event
             form.addEventListener('submit', function (event) {
-                event.preventDefault(); // Prevent page reload
+                event.preventDefault(); // Prevent page reload on submit
 
-                // Replace form with success message using CSS class
+                // Replace the form with a success message
                 container.innerHTML = '<p class="feedback-success">Thanks! For the feedback!</p>';
             });
-
         </script>
 
-        <!-- Inline Game Logic Example -->
+        <!-- Inline Game Logic -->
         <script>
-            // Grab all option buttons
+            // Select all game option buttons
             const options = document.querySelectorAll('.options button');
+
+            // Select score and result elements
             const playerScoreEl = document.getElementById('player-score');
             const computerScoreEl = document.getElementById('computer-score');
             const resultEl = document.getElementById('result');
 
-            // Initialize scores
+            // Initialize player and computer scores
             let playerScore = 0;
             let computerScore = 0;
 
-            // Map of which option beats which
+            // Game rules mapping: which choice beats which
             const rules = {
                 rock: ['scissors', 'lizard'],
                 paper: ['rock', 'spock'],
@@ -144,15 +150,15 @@
                 spock: ['rock', 'scissors']
             };
 
-            // Function to pick a random choice for the computer
+            // Function to randomly select computer's choice
             function getComputerChoice() {
-                const choices = Object.keys(rules);
+                const choices = Object.keys(rules); // ['rock','paper','scissors','lizard','spock']
                 return choices[Math.floor(Math.random() * choices.length)];
             }
 
-            // Function to play a round
+            // Function to handle a round of the game
             function playRound(playerChoice) {
-                const computerChoice = getComputerChoice();
+                const computerChoice = getComputerChoice(); // Computer randomly chooses
 
                 // Check for tie
                 if (playerChoice === computerChoice) {
@@ -162,12 +168,12 @@
 
                 // Check if player wins
                 if (rules[playerChoice].includes(computerChoice)) {
-                    playerScore++;
-                    playerScoreEl.innerText = playerScore;
+                    playerScore++; // Increment player score
+                    playerScoreEl.innerText = playerScore; // Update score display
                     resultEl.innerText = `You Win! ${playerChoice} beats ${computerChoice}`;
                 } else {
-                    computerScore++;
-                    computerScoreEl.innerText = computerScore;
+                    computerScore++; // Increment computer score
+                    computerScoreEl.innerText = computerScore; // Update score display
                     resultEl.innerText = `You Lose! ${computerChoice} beats ${playerChoice}`;
                 }
 
@@ -179,20 +185,20 @@
                 }
             }
 
-            // Add event listeners to each button
+            // Add click event listeners to all option buttons
             options.forEach(button => {
                 button.addEventListener('click', () => playRound(button.id));
             });
 
-            // Restart button logic
+            // Restart button logic: resets scores and re-enables buttons
             document.getElementById('play-again').addEventListener('click', () => {
                 playerScore = 0;
                 computerScore = 0;
                 playerScoreEl.innerText = playerScore;
                 computerScoreEl.innerText = computerScore;
                 resultEl.innerText = 'Win, Lose, or Tie?';
-                document.getElementById('play-again').classList.add('hidden');
-                options.forEach(button => button.disabled = false);
+                document.getElementById('play-again').classList.add('hidden'); // Hide restart button
+                options.forEach(button => button.disabled = false); // Re-enable game buttons
             });
         </script>
     </footer>
