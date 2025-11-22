@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Lizard Spock</title>
-    <!-- Link to external CSS stylesheet -->
+
+    <!-- ============================
+         External CSS Stylesheet
+         Contains layout, colors, fonts, and button styling
+    ============================ -->
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
@@ -13,7 +17,7 @@
 
     <!-- ============================
          Header Section
-         Displays the game title and instructions
+         Displays the page title and a subtitle explaining the win condition
     ============================ -->
     <header class="header">
         <h1>Rock Paper Scissors Lizard Spock</h1>
@@ -21,32 +25,38 @@
     </header>
 
     <!-- ============================
-         Scoreboard Section
-         Shows the player score, computer score, and round result
+         Scoreboard Container
+         Holds player score, round result, and computer score
+         Updated dynamically by JavaScript during gameplay
     ============================ -->
     <div class="scoreboard">
-        <!-- Player Score -->
+
+        <!-- Player Score Box -->
         <div class="player-score">
             <h2 class="score-title">Player</h2>
+            <!-- Score updated by game script -->
             <h2 id="player-score" class="score-box">0</h2>
         </div>
 
-        <!-- Round Result -->
+        <!-- Display for Round Result -->
         <div class="result">
             <h2 class="score-title">Vs</h2>
+            <!-- Shows result text such as "Win", "Lose", or "Tie" -->
             <div id="result" class="score-box">Win, Lose, or Tie?</div>
         </div>
 
-        <!-- Computer Score -->
+        <!-- Computer Score Box -->
         <div class="computer-score">
             <h2 class="score-title">Computer</h2>
+            <!-- Score updated by game script -->
             <h2 id="computer-score" class="score-box">0</h2>
         </div>
     </div>
 
     <!-- ============================
-         Option Buttons
-         Buttons for player to select rock, paper, scissors, lizard, or spock
+         Player Choice Buttons
+         Each button triggers a JavaScript function to play a round
+         Icons included for visual clarity
     ============================ -->
     <div class="options">
         <button id="rock">🤟 Rock</button>
@@ -58,7 +68,7 @@
 
     <!-- ============================
          Start/Restart Button
-         Starts or restarts the game
+         Used to begin a new game or reset an ongoing one
     ============================ -->
     <div class="buttons">
         <button id="start">Start</button>
@@ -66,7 +76,8 @@
 
     <!-- ============================
          Rules Section
-         Explains how each option wins against others
+         Lists all valid interactions between choices
+         Helpful for new players or unfamiliar combinations
     ============================ -->
     <section id="rules">
         <h2>Rules</h2>
@@ -82,27 +93,32 @@
     </section>
 
     <!-- ============================
-         Feedback Form Section
-         Allows users to submit their feedback
+         Footer Section - Feedback Form
+         Allows users to submit comments about the game
+         Fields include name, email, and message
+         Form submission handled via JavaScript
     ============================ -->
     <footer>
         <section id="contact" class="contact-section">
             <h2 class="contact-title">🎮 Rock Paper Scissors Lizard Spock Feedback Form</h2>
+
             <div class="booking-form-container">
+                <!-- Feedback Form -->
                 <form id="booking-form" class="booking-form" autocomplete="on">
-                    <!-- Name Input -->
+
+                    <!-- User Name Input -->
                     <label for="name" class="form-label">Name:</label>
                     <input type="text" id="name" name="Name" required autocomplete="name" class="form-input">
 
-                    <!-- Email Input -->
+                    <!-- User Email Input -->
                     <label for="email" class="form-label">Email:</label>
                     <input type="email" id="email" name="Email" required autocomplete="email" class="form-input">
 
-                    <!-- Message Input -->
+                    <!-- User Message Text Area -->
                     <label for="message" class="form-label">Message:</label>
                     <textarea id="message" name="Message" rows="5" required class="form-textarea"></textarea>
 
-                    <!-- Submit Button -->
+                    <!-- Submit Form Button -->
                     <button type="submit" class="submit-btn">Submit</button>
                 </form>
             </div>
@@ -110,8 +126,12 @@
     </footer>
 
     <!-- ============================
-         Link to External JavaScript
-         Contains game logic and form handling
+         JavaScript File
+         Contains full game logic:
+         - Button click handlers
+         - Score updates
+         - Win/loss conditions
+         - Feedback form handling
     ============================ -->
     <script src="assets/script/script.js"></script>
 </body>
