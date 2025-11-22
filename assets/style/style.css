@@ -1,73 +1,82 @@
-/* Reset default margins and paddings for all elements and set box-sizing to border-box */
+/* ============================================================
+   Reset padding/margins and use border-box to make sizing easier
+=============================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ==== Body ==== */
+/* ============================================================
+   BODY STYLING
+   Sets font, text color, and applies a full-screen background
+=============================================================== */
 body {
     font-family: sans-serif;
-    /* Use a clean, sans-serif font */
+    /* Clean, readable font */
     font-size: 16px;
-    /* Default font size */
+    /* Base font size */
     color: #333;
     /* Default text color */
     background-image: url('../images/thebigbang1.jpg');
-    /* Background image */
+    /* Main background */
     background-size: cover;
-    /* Make the background cover the entire page */
+    /* Fill entire screen */
     background-position: center;
-    /* Center the background image */
+    /* Keep image centered */
     background-repeat: no-repeat;
-    /* Prevent repeating */
+    /* Prevent tiling */
     background-attachment: fixed;
-    /* Background stays fixed on scroll */
+    /* Keeps background from scrolling */
 }
 
-/* Hide elements using this class */
+/* Utility class to hide elements */
 .hidden {
     display: none;
 }
 
-/* ==== Header ==== */
+/* ============================================================
+   HEADER SECTION
+   Contains the main game title and subtitle
+=============================================================== */
 .header {
     background-color: #8BC34A;
-    /* Green background */
+    /* Bright green background */
     color: white;
-    /* White text */
+    /* White text for contrast */
     padding: 1em;
-    /* Space inside header */
+    /* Internal spacing */
     text-align: center;
-    /* Center align text */
+    /* Centered text */
 }
 
 .header h1 {
     font-size: 2rem;
-    /* Large heading font */
+    /* Large title */
     margin: 0;
-    /* Remove extra margin */
+    /* Remove browser defaults */
 }
 
-/* ==== Scoreboard ==== */
+/* ============================================================
+   SCOREBOARD SECTION
+   Flexbox layout showing player score, result, and computer score
+=============================================================== */
 .scoreboard {
     display: flex;
-    /* Use flex layout */
+    /* Align side-by-side */
     justify-content: space-between;
-    /* Space between player, result, computer */
+    /* Spread evenly */
     margin: 2em;
-    /* Margin around scoreboard */
+    /* Space around board */
     background-color: rgba(255, 255, 255, 0.75);
-    /* Slightly transparent background */
+    /* Soft white background */
     padding: 0.5em;
-    /* Padding inside the scoreboard */
     border-radius: 1em;
     /* Rounded corners */
 }
 
 .score-title {
     font-weight: bold;
-    /* Bold labels */
     color: black;
     text-align: center;
 }
@@ -77,7 +86,7 @@ body {
     margin-bottom: 0.5em;
 }
 
-/* Each scoreboard section takes equal width */
+/* Each scoreboard section gets equal width */
 .player-score,
 .computer-score,
 .result {
@@ -85,7 +94,7 @@ body {
     text-align: center;
 }
 
-/* Score boxes styling */
+/* Score display boxes */
 .score-box,
 #player-score,
 #computer-score,
@@ -96,21 +105,24 @@ body {
     /* Black background */
     padding: 5px 10px;
     border-radius: 5px;
-    /* Rounded corners */
     display: inline-block;
+    /* Keep compact */
     font-weight: bold;
     text-align: center;
     min-width: 60px;
-    /* Ensure consistent size */
+    /* Ensures consistent size */
 }
 
-/* ==== Options Buttons ==== */
+/* ============================================================
+   PLAYER OPTION BUTTONS
+   The Rock/Paper/Scissors/Lizard/Spock selection buttons
+=============================================================== */
 .options {
     display: flex;
+    flex-direction: column;
+    /* Stacked on small screens */
     justify-content: center;
     margin-bottom: 2em;
-    flex-direction: column;
-    /* Stack buttons on small screens */
     gap: 0.5em;
     /* Space between buttons */
 }
@@ -121,26 +133,29 @@ body {
     border-radius: 0.5em;
     color: #040404;
     font-size: 1.5em;
+    /* Large buttons */
     width: 50%;
-    /* Half the container width */
+    /* Half the screen width */
     margin: 0 auto;
     /* Center horizontally */
     padding: 1em 2em;
     transition: transform 0.15s;
-    /* Smooth hover animation */
+    /* Hover animation */
 }
 
+/* Button hover animation */
 .options button:hover {
     background-color: #79aa3f;
-    /* Slightly darker green on hover */
     transform: scale(1.05);
-    /* Slightly enlarge button on hover */
+    /* Slight enlargement */
 }
 
-/* ==== Generic Buttons ==== */
+/* ============================================================
+   START/RESTART BUTTON
+=============================================================== */
 .buttons {
     text-align: center;
-    /* Center align start/restart buttons */
+    /* Center button */
 }
 
 .buttons button {
@@ -153,12 +168,15 @@ body {
     padding: 1em 2em;
 }
 
+/* Hover effect */
 .buttons button:hover {
     background-color: #666;
-    /* Dark gray on hover */
 }
 
-/* ==== Rules Section ==== */
+/* ============================================================
+   RULES SECTION
+   The rules explanation box with styled text and layout
+=============================================================== */
 .rules {
     text-align: center;
     font-size: 1em;
@@ -176,7 +194,7 @@ h2 {
 
 ul {
     margin-left: 30px;
-    /* Indent lists */
+    /* Indented list items */
     font-size: 1em;
     line-height: 1;
 }
@@ -191,6 +209,7 @@ p {
     line-height: 1;
 }
 
+/* Rules container box */
 #rules {
     text-align: center;
     margin: 40px auto;
@@ -200,7 +219,6 @@ p {
     border-radius: 12px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
 }
 
 #rules ul {
@@ -210,7 +228,9 @@ p {
     text-align: left;
 }
 
-/* ==== Contact Section ==== */
+/* ============================================================
+   CONTACT / FEEDBACK FORM SECTION
+=============================================================== */
 .contact-section {
     max-width: 700px;
     margin: 2em auto;
@@ -239,7 +259,10 @@ p {
     color: white;
 }
 
-/* ==== Booking Form ==== */
+/* ============================================================
+   FEEDBACK FORM STYLING
+   Main form container and input styles
+=============================================================== */
 .booking-form-container {
     display: flex;
     justify-content: center;
@@ -256,6 +279,7 @@ p {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
+/* Form labels */
 .form-label {
     color: white;
     font-weight: bold;
@@ -266,7 +290,7 @@ p {
     margin-top: 10px;
 }
 
-/* Form inputs and textarea */
+/* Input fields and textareas */
 .form-input,
 .form-textarea,
 .booking-form input,
@@ -295,13 +319,14 @@ p {
     font-weight: bold;
 }
 
+/* Hover effect */
 .submit-btn:hover,
 .booking-form button:hover {
     background-color: #d62828;
-    /* Red on hover */
+    /* Red hover */
 }
 
-/* ==== Feedback Message ==== */
+/* Success message shown after sending feedback */
 .feedback-success {
     font-size: 1.2rem;
     padding: 1em;
@@ -312,37 +337,45 @@ p {
     border-radius: 8px;
 }
 
-
-/* ==== Emoji Row ==== */
+/* ============================================================
+   EMOJI ROW DECORATION
+=============================================================== */
 .emoji-row {
     text-align: center;
     font-size: 2rem;
     margin-top: 1em;
 }
 
-/* ==== Media Queries ==== */
+/* ============================================================
+   RESPONSIVE DESIGN
+   Media queries controlling font and layout on different screens
+=============================================================== */
+
+/* Phones */
 @media (max-width: 767px) {
     body {
         font-size: 14px;
-        /* Smaller font for small screens */
     }
 }
 
+/* Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     body {
         font-size: 16px;
     }
 }
 
+/* Desktops */
 @media (min-width: 992px) {
     body {
         font-size: 18px;
     }
 }
 
+/* Widen button layout on larger screens */
 @media (min-width: 975px) {
     .options {
         flex-direction: row;
-        /* Side-by-side buttons for larger screens */
+        /* Horizontal layout */
     }
 }
