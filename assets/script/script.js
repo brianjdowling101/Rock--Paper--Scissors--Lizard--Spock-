@@ -7,19 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Game Configuration & State
     // ----------------------------
 
-    // The available choices for the game
+    // All possible choices in the game
     const options = ["rock", "paper", "scissors", "lizard", "spock"];
 
-    // The score needed to win the game
+    // The score a player needs to reach to win
     const WINNING_SCORE = 15;
 
-    // Defines which options beat which other options
+    // Define which choices beat which other choices
     const winsAgainst = {
-        rock: ['scissors', 'lizard'],      // Rock crushes Scissors & Lizard
-        paper: ['rock', 'spock'],          // Paper covers Rock & disproves Spock
-        scissors: ['paper', 'lizard'],     // Scissors cuts Paper & decapitates Lizard
-        lizard: ['paper', 'spock'],        // Lizard eats Paper & poisons Spock
-        spock: ['rock', 'scissors']        // Spock vaporizes Rock & smashes Scissors
+        rock: ['scissors', 'lizard'],      // Rock beats Scissors & Lizard
+        paper: ['rock', 'spock'],          // Paper beats Rock & Spock
+        scissors: ['paper', 'lizard'],     // Scissors beats Paper & Lizard
+        lizard: ['paper', 'spock'],        // Lizard beats Paper & Spock
+        spock: ['rock', 'scissors']        // Spock beats Rock & Scissors
     };
 
     // ----------------------------
@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // DOM Elements
     // ----------------------------
 
-    const playerScoreDisplay = document.getElementById("player-score");     // Where player's score is displayed
-    const computerScoreDisplay = document.getElementById("computer-score"); // Where computer's score is displayed
-    const resultDisplay = document.getElementById("result");               // Display round/game results
-    const startButton = document.getElementById("start");                  // Start/Restart game button
-    const optionButtons = document.querySelectorAll(".options button");    // All choice buttons (rock, paper, etc.)
+    const playerScoreDisplay = document.getElementById("player-score");     // Display for player score
+    const computerScoreDisplay = document.getElementById("computer-score"); // Display for computer score
+    const resultDisplay = document.getElementById("result");               // Displays round/game results
+    const startButton = document.getElementById("start");                  // Start/Restart button
+    const optionButtons = document.querySelectorAll(".options button");    // All choice buttons
 
-    // Disable all option buttons initially until the game starts
+    // Disable all option buttons until the game starts
     disableOptions();
 
     // ----------------------------
@@ -46,45 +46,45 @@ document.addEventListener("DOMContentLoaded", () => {
     // ----------------------------
 
     /**
-     * playRound:
+     * playRound
      * Handles a single round of the game.
      * @param {string} playerSelection - The player's choice
      */
     function playRound(playerSelection) {
-        // Computer randomly selects an option
+        // Randomly select an option for the computer
         const computerSelection = options[Math.floor(Math.random() * options.length)];
 
-        // Check for tie
+        // Check for a tie
         if (playerSelection === computerSelection) {
             resultDisplay.textContent = `Tie! You both chose ${playerSelection}.`;
-            return;
+            return; // No score changes
         }
 
-        // Check if the player wins
+        // Check if the player wins the round
         if (winsAgainst[playerSelection].includes(computerSelection)) {
-            playerScore++;
-            updateScores();
+            playerScore++;         // Increment player score
+            updateScores();        // Update DOM scores
             resultDisplay.textContent = `You win this round! ${playerSelection} beats ${computerSelection}.`;
         } else {
             // Computer wins the round
-            computerScore++;
-            updateScores();
+            computerScore++;       // Increment computer score
+            updateScores();        // Update DOM scores
             resultDisplay.textContent = `Computer wins this round! ${computerSelection} beats ${playerSelection}.`;
         }
 
-        // Check for end of game
+        // Check for end-of-game conditions
         if (playerScore === WINNING_SCORE) {
             resultDisplay.textContent = "🎉 You won the game!";
-            disableOptions();
+            disableOptions(); // Stop further rounds
         } else if (computerScore === WINNING_SCORE) {
             resultDisplay.textContent = "💀 You lost the game!";
-            disableOptions();
+            disableOptions(); // Stop further rounds
         }
     }
 
     /**
-     * updateScores:
-     * Updates the DOM with current player and computer scores.
+     * updateScores
+     * Updates the DOM elements to reflect current scores
      */
     function updateScores() {
         playerScoreDisplay.textContent = playerScore;
@@ -92,30 +92,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /**
-     * disableOptions:
-     * Disables all option buttons (used when game hasn't started or has ended)
+     * disableOptions
+     * Disables all choice buttons (used when the game hasn't started or has ended)
      */
     function disableOptions() {
         optionButtons.forEach(btn => btn.disabled = true);
     }
 
     /**
-     * enableOptions:
-     * Enables all option buttons (used when game starts or restarts)
+     * enableOptions
+     * Enables all choice buttons (used when the game starts or restarts)
      */
     function enableOptions() {
         optionButtons.forEach(btn => btn.disabled = false);
     }
 
     /**
-     * resetGame:
-     * Resets scores, updates DOM, and enables option buttons for a new game.
+     * resetGame
+     * Resets scores, updates the DOM, and enables option buttons for a new game
      */
     function resetGame() {
         playerScore = 0;
         computerScore = 0;
         updateScores();
-        resultDisplay.textContent = "Win, Lose, or Tie?";
+        resultDisplay.textContent = "Win, Lose, or Tie?"; // Reset result message
         enableOptions();
     }
 
@@ -123,17 +123,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Event Listeners
     // ----------------------------
 
-    // Start/Restart button
+    // Start or restart the game
     startButton.addEventListener("click", () => {
-        startButton.textContent = "Restart";  // Change button text to "Restart"
-        resetGame();                           // Reset scores and enable options
+        startButton.textContent = "Restart";  // Update button text
+        resetGame();                           // Reset scores and enable buttons
     });
 
-    // Option buttons (rock, paper, etc.)
+    // Add click events for each choice button
     optionButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            playRound(button.id);             // Play a round using the button's ID as the player's choice
-        });
+        button.addEventListener("click", () => playRound(button.id));
     });
 
     // ----------------------------
@@ -141,10 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // ----------------------------
 
     const form = document.getElementById('booking-form');
-
     if (form) {
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();  // Prevent default form submission
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();  // Prevent page reload
+
             const container = form.parentElement;
 
             // A thank-you message
@@ -154,6 +152,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 }); // END DOMContentLoaded
+
+
 
 
 
