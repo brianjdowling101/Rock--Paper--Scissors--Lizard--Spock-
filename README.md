@@ -194,7 +194,10 @@ Here’s a visual representation of the layout and flow of the game:
 
 ![image](/assets/images/thewireframediagram.jpg)
 
-- **Note:** This wireframe was made using Microsoft Word and hand-drawn sketches. It illustrates the structure of the header, main game, rules section, feedback form (footer).
+- **Note:** This wireframe was made using Microsoft Word and hand-drawn sketches. It illustrates the structure of the header, main game, rules section, feedback form.
+
+**⚠️ Note:** Based on user feedback, the "Play Again" button has **been removed** from the game interface.
+
 
 ## 🚀 Future Features
 
