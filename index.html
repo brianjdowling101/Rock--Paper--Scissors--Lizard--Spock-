@@ -14,11 +14,9 @@
 <body>
 
     <!-- Header Section: Game title and instructions -->
-    <header>
-        <div class="header">
-            <h1 style="color: black;">Paper Scissors Lizard Spock</h1> <!-- Main game title -->
-            <p style="color: black;"><strong>First to 15 wins!</strong></p> <!-- Short instruction for the player -->
-        </div>
+    <header class="header">
+        <h1>Rock Paper Scissors Lizard Spock</h1> <!-- Main game title -->
+        <p><strong>First to 15 wins!</strong></p> <!-- Short instruction for the player -->
     </header>
 
     <!-- Scoreboard Section: Displays scores and round result -->
@@ -26,28 +24,24 @@
 
         <!-- Player's Score -->
         <div class="player-score">
-            <h2 style="font-weight: bold; color: black;">Player</h2>
-            <h2 id="player-score"
-                style="color: white; font-weight: bold; background-color: black; padding: 5px; border-radius: 5px;">
-                0 <!-- Initial player score, updated dynamically via JavaScript -->
+            <h2 class="score-title">Player</h2>
+            <h2 id="player-score" class="score-box">0 <!-- Initial player score, updated dynamically via JavaScript -->
             </h2>
         </div>
 
         <!-- Result of the Current Round -->
         <div class="result">
-            <h2 style="font-weight: bold; color: black;">Vs</h2>
-            <div id="result"
-                style="color: white; font-weight: bold; background-color: black; padding: 5px; border-radius: 5px;">
-                Win, Lose, or Tie? <!-- Placeholder text, updated via JavaScript after each round -->
+            <h2 class="score-title">Vs</h2>
+            <div id="result" class="score-box">Win, Lose, or Tie?
+                <!-- Placeholder text, updated via JavaScript after each round -->
             </div>
         </div>
 
         <!-- Computer's Score -->
         <div class="computer-score">
-            <h2 style="font-weight: bold; color: black;">computer</h2>
-            <h2 id="computer-score"
-                style="color: white; font-weight: bold; background-color: black; padding: 5px; border-radius: 5px;">
-                0 <!-- Initial computer score, updated dynamically via JavaScript -->
+            <h2 class="score-title">Computer</h2>
+            <h2 id="computer-score" class="score-box">0
+                <!-- Initial computer score, updated dynamically via JavaScript -->
             </h2>
         </div>
     </div>
@@ -64,8 +58,7 @@
     <!-- Control Buttons: Start or restart the game -->
     <div class="buttons">
         <button id="start">Start</button> <!-- Starts a new game and resets scores -->
-        <button id="play-again" style="display: none;">Play Again</button>
-        <!-- Displayed when the game ends to restart -->
+        <button id="play-again" class="hidden">Play Again</button> <!-- Displayed when the game ends to restart -->
     </div>
 
     <!-- Rules Section: Explains how the game works -->
@@ -82,102 +75,64 @@
         </ul>
     </section>
 
-
-
     <footer>
+
         <!-- Contact form section with buttons -->
-        <section id="contact"
-            style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6; text-align: center;">
+        <section id="contact" class="contact-section">
 
             <!-- Contact Section Heading -->
-            <h2 style="color: white; background-color: black; padding: 20px; border-radius: 10px;">
-                🎮 <strong>Rock Paper Scissors Lizard Spock Game Feedback Form</strong>
-            </h2>
+            <h2 class="contact-title">🎮 <strong>Rock Paper Scissors Lizard Spock Game Feedback Form</strong></h2>
 
             <!-- Introductory paragraph encouraging users to reach out -->
-            <div style="background-color: black; padding: 20px; border-radius: 10px;">
-                <strong style="color: white;">
+            <div class="contact-intro">
+                <strong>
                     Thank you for playing my game!<br><br>
                     Please take a moment to share your thoughts. Your feedback helps me improve future versions.<br>
                     Just drop us a message below!<br>
                 </strong>
-
                 <!-- Down arrow symbol pointing to the form -->
-                <div
-                    style="background-color: black; padding: 20px; border-radius: 10px; text-align: center; font-size: 2rem; margin-top: 10px; color: #FFFFFF;">
-                    &#8595;
-                </div>
+                <div class="arrow">&#8595;</div>
             </div>
 
-            <br><br>
-
             <!-- Container for the contact form -->
-            <div class="booking-form-container" style="text-align: left;">
-                <form id="booking-form" class="booking-form" style="max-width: 600px; margin: 0 auto;"
-                    autocomplete="on">
+            <div class="booking-form-container">
+                <form id="booking-form" class="booking-form" autocomplete="on">
 
                     <!-- Name input field -->
-                    <label for="name"
-                        style="color: white; font-weight: bold; background-color: black; padding: 10px; border-radius: 8px; display: inline-block;">
-                        Name:
-                    </label>
-                    <input type="text" id="name" name="Name" required autocomplete="name"
-                        style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="Name" required autocomplete="name" class="form-input">
 
                     <!-- Email input field -->
-                    <label for="email"
-                        style="color: white; font-weight: bold; background-color: black; padding: 10px; border-radius: 8px; display: inline-block;">
-                        Email:
-                    </label>
-                    <input type="email" id="email" name="Email" required autocomplete="email"
-                        style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="Email" required autocomplete="email" class="form-input">
 
                     <!-- Message textarea field -->
-                    <label for="message"
-                        style="color: white; font-weight: bold; background-color: black; padding: 10px; border-radius: 8px; display: inline-block;">
-                        Message:
-                    </label>
-                    <textarea id="message" name="Message" rows="5" required autocomplete="off"
-                        style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="Message" rows="5" required class="form-textarea"></textarea>
 
                     <!-- Submit button -->
-                    <button type="submit"
-                        style="background-color: hsl(0, 0%, 0%); color: white; padding: 0.7em 1.5em; border: none; border-radius: 4px; cursor: pointer;">
-                        Submit
-                    </button>
+                    <button type="submit" class="submit-btn">Submit</button>
                 </form>
             </div>
 
             <!-- Decorative rock-on emoji centered below the form -->
-            <div style="text-align: center; font-size: 2rem; margin-top: 1em;">
-                🤘✋✌️🦎🖖
-            </div>
+            <div class="emoji-row">🤘✋✌️🦎🖖</div>
         </section>
 
+        <!-- Link to the JavaScript file that handles game logic -->
+        <script src="assets/script/script.js"></script>
 
+        <script>
+            const form = document.getElementById('booking-form');
+            const container = form.parentElement; // .booking-form-container
 
-        <div>
-            <!-- Link to the JavaScript file that handles game logic -->
-            <script src="assets/script/script.js"></script>
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent page reload.
 
-            <div>
-                <script>
-                    const form = document.getElementById('booking-form');
-                    const container = form.parentElement; // .booking-form-container
-
-                    form.addEventListener('submit', function (event) {
-                        event.preventDefault(); // Prevent page reload.
-
-                        // Replace form with success message
-                        container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center; color:white; font-weight:bold;">Thanks! For the feedback!</p>';
-
-                    });
-
-                </script>
-            </div>
-        </div>
-
-
+                // Replace form with success message
+                container.innerHTML = '<p class="feedback-success">Thanks! For the feedback!</p>';
+            });
+        </script>
 
     </footer>
 </body>
