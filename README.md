@@ -12,7 +12,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 - Inspired by this, the **bright colour palette** in this project reflects that classic Star Trek aesthetic, giving the game a futuristic and energetic vibe.
 
 
-![image](/assets/images/homepage1.png)
+![image](/assets/images/homepage1..png)
 
 - Players compete against the computer, aiming to reach 15 points first to win. Each round tests your luck, logic, and strategy in this expanded five-choice game.
 
