@@ -12,11 +12,11 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 - Inspired by this, the **bright colour palette** in this project reflects that classic Star Trek aesthetic, giving the game a futuristic and energetic vibe.
 
 
-![image](images/homepage1.png)
+![image](/assets/images/homepage1.png)
 
 - Players compete against the computer, aiming to reach 15 points first to win. Each round tests your luck, logic, and strategy in this expanded five-choice game.
 
-![image](images/homepagerules.png)
+![image](/assets/images/homepagerules.png)
 
 - Link to Game: https://brianjdowling101.github.io/Rock--Paper--Scissors--Lizard--Spock-/
 
@@ -110,7 +110,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Positioned at the top center of the page.
 
-![image](images/headersection.png)
+![image](/assets/images/headersection.png)
 
 ## Main Game Area (Body Section)
 
@@ -132,7 +132,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Ongoing Score Counter: Player vs Computer
 
-![image](images/homepage1.png)
+![image](/assets/images/homepage1.png)
 
 
 ### 3. Rules Section
@@ -149,13 +149,13 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Spock smashes Scissors and vaporizes Rock
 
-![image](images/rules.png)
+![image](/assets/images/rules.png)
 
 ### 4. Feedback Form
 
 - Section or modal allowing players to share feedback about the game. An arrow points down to the feedback form.
 
-![image](images/feedbackformpt1.png)
+![image](/images/feedbackformpt1.png)
 
 - Form Fields:
 
@@ -165,17 +165,17 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Message:
 
-![image](images/feddbackformpt2.png)
+![image](/assets/images/feddbackformpt2.png)
 
 - Submit Button triggers form validation and a thank-you message (e.g., “Thanks for your feedback!”)
 
-![image](images/Thankyoumessage.png)
+![image](/assets/images/Thankyoumessage.png)
 
 ## Wireframe Diagram
 
 Here’s a visual representation of the layout and flow of the game:
 
-![image](images/thewireframediagram.jpg)
+![image](/assets/images/thewireframediagram.jpg)
 
 - **Note:** This wireframe was made using Microsoft Word and hand-drawn sketches. It illustrates the structure of the header, main game, rules section, feedback form (footer).
 
@@ -200,18 +200,18 @@ Previously, three stray code errors were detected and have since been corrected.
 
 - W3C HTML Validator pass validation. No errors or warnings were found. The site now validates with zero errors.
 
-![image](images/htmlpass.png)
+![image](/assets/images/htmlpass.png)
 
 
 - W3C CSS Validator pass validation. No errors or warnings were found. The site now validates with zero errors.  
 
-![image](images/csspass.png)
+![image](/assets/images/csspass.png)
 
 - JavaScript code now passes the validator. Previously, there were 22 warnings reported. They have since been corrected. The site now validates with zero errors.
 
-![image](images/javascript2pass.png)
+![image](/assets/images/javascript2pass.png)
 
-![image](images/js.hintpass.png)
+![image](/assets/images/js.hintpass.png)
 
 ## Accessibility Testing
 
@@ -236,7 +236,7 @@ The game was designed with accessibility in mind, including:
 
 -All 3 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
 
-![image](images/lighthousetesting.png)
+![image](/assets/images/lighthousetesting.png)
 
 ✅ **Accessibility Results**
 
@@ -248,7 +248,7 @@ The game was designed with accessibility in mind, including:
 
 - ⚠️ Manual testing is still necessary to ensure full compliance and optimal accessibility.
 
-![image](images/wave..png)
+![image](/assets/images/wave..png)
 
 ## 🌐 Browser Compatibility
 
@@ -268,7 +268,7 @@ The game was designed with accessibility in mind, including:
 
 The game was designed to be fully responsive across devices and screen sizes.
 
-![image](images/iamresponive.png)
+![image](/assets/images/iamresponive.png)
 
 🛠 **Manual & Stress Testing**
 
