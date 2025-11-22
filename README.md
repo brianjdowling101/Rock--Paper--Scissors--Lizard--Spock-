@@ -352,3 +352,8 @@ Special thanks and references:
 - **Code Institute Notes** – for HTML, CSS, and JavaScript guidance, particularly for building the feedback form.  
 - **Project Reference:** [Project 1 – Concrete Handbag by brianjdowling101](https://github.com/brianjdowling101/project-1-concrete-handbag) – used as inspiration for overall project structure and implementation. Very useful for Feedback from. Note: This Concrete Handbag is a pass project of Mine.
 - **YouTube Tutorial:** [Build this Rock Paper Scissors game with JavaScript!](https://www.youtube.com/watch?v=3uKdQx-SZ5A) – provided additional guidance and examples for game logic.  
+
+### ⚠️ JSON Validator Note
+
+During testing, the [CodersTool JSON Validator](https://www.coderstool.com/json-validator) recommended for feedback was down, so JSON validation could not be completed at that time. I use other JS validators.
+
