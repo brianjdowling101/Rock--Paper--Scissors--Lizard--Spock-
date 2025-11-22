@@ -340,6 +340,47 @@ The game was designed to be fully responsive across devices and screen sizes.
 
 - JavaScript Validators – JSHint and other tools to check JS syntax and quality
 
+## 🧪 Testing Summary
+
+### Manual Testing:
+
+- Tested on desktop, tablet, and mobile (including landscape mode).
+
+- Verified functionality in Chrome, Firefox, Edge, and Safari.
+
+### Gameplay tested:
+
+- Player choice selection (Rock, Paper, Scissors, Lizard, Spock).
+
+- Real-time score tracking.
+
+- Instant round feedback (win, lose, draw).
+
+- Rules display and accessibility.
+
+- Accessibility checks: Text readability, contrast, and responsiveness.
+
+- Stress testing: Multiple consecutive rounds to confirm stability.
+
+- Result: All manual tests passed ✅ Game is fully functional, responsive, and accessible.
+
+## Automation Testing:
+
+- HTML & CSS: All pages passed W3C validation with zero errors.
+
+- JavaScript: Code validated with JSHint; zero errors or warnings.
+
+- Accessibility: Lighthouse & WAVE audits passed; high contrast and readable fonts.
+
+- Responsive Testing: Verified layout and functionality across devices (IAmResponsive).
+
+- Browser Compatibility: Consistent performance on Chrome, Firefox, Edge, and Safari.
+
+- Result: Automated tests confirm the site is standards-compliant, accessible, responsive, and fully functional ✅
+
+⚠️ Note: During testing, the CodersTool JSON Validator
+ recommended for feedback was temporarily down, so JSON validation could not be completed at that time.
+
 ## Credits & References
 
 This project was inspired by:
@@ -353,7 +394,4 @@ Special thanks and references:
 - **Project Reference:** [Project 1 – Concrete Handbag by brianjdowling101](https://github.com/brianjdowling101/project-1-concrete-handbag) – used as inspiration for overall project structure and implementation. Very useful for Feedback from. Note: This Concrete Handbag is a pass project of Mine.
 - **YouTube Tutorial:** [Build this Rock Paper Scissors game with JavaScript!](https://www.youtube.com/watch?v=3uKdQx-SZ5A) – provided additional guidance and examples for game logic.  
 
-### ⚠️ JSON Validator Note
-
-During testing, the [CodersTool JSON Validator](https://www.coderstool.com/json-validator) recommended for feedback was down, so JSON validation could not be completed at that time. I use other JS validators.
 
