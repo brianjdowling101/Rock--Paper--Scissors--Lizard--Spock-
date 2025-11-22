@@ -30,7 +30,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - I want to see instant feedback (win, lose, or draw), so I know how I performed each round.
 
-- I want the game to track my score in real-time, so I can challenge myself and aim for higher results.
+- I want the game to track my score in real-time.
 
 - I want to play comfortably on my phone in landscape mode, as it feels like operating a futuristic Star Trek control panel — the perfect setup for a Big Bang Theory-inspired experience.
 
