@@ -32,9 +32,6 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - I want the game to track my score in real-time.
 
-- I want to play comfortably on my phone in landscape mode, as it feels like operating a futuristic Star Trek control panel — the perfect setup for a Big Bang Theory-inspired experience.
-
-- I want the interface to be responsive and visually engaging, with animations and sounds that enhance the sci-fi theme.
 
 ### External User Goals
 
