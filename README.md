@@ -256,7 +256,7 @@ The game was designed with accessibility in mind, including:
 
 - ⚠️ Manual testing is still necessary to ensure full compliance and optimal accessibility.
 
-![image](/assets/images/wave..png)
+![image](/assets/images/wave.png)
 
 ## 🌐 Browser Compatibility
 
@@ -276,7 +276,7 @@ The game was designed with accessibility in mind, including:
 
 The game was designed to be fully responsive across devices and screen sizes.
 
-![image](/assets/images/iamresponive.png)
+![image](/assets/images/i.am.iresponsive?.png)
 
 🛠 **Manual & Stress Testing**
 
