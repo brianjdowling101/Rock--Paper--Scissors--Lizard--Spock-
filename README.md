@@ -109,8 +109,6 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - A feedback form
 
-- Page Layout Structure
-
 ## Header Section
 
 - Title: “Rock, Paper, Scissors, Lizard, Spock”
