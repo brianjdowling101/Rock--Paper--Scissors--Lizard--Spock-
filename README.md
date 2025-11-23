@@ -137,7 +137,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Ongoing Score Counter: Player vs Computer
 
-![image](/assets/images/homepage1.png)
+![image](/assets/images/buttonspng.png)
 
 
 ### 3. Rules Section
