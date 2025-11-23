@@ -40,6 +40,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - I want the game to track my score in real-time.
 
+![image](/assets/images/scoreboard.png)
 
 ### External User Goals
 
