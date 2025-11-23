@@ -41,10 +41,6 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - I want to see my score update dynamically as I play.
 
-- I want the game to be responsive and work on mobile devices. Landscape mode on mobile is a creative choice:
-
-- It evokes the feel of a futuristic gaming console or starship control screen, aligning with the Star Trek and Big Bang Theory inspiration.
-
 ## Site Owner Goals
 
 - To entertain users through an engaging and modern web game.
