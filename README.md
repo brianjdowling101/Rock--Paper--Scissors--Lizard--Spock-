@@ -163,8 +163,6 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Section or modal allowing players to share feedback about the game. An arrow points down to the feedback form.
 
-![image](/images/feedbackformpt1.png)
-
 - Form Fields:
 
 - Name:
@@ -173,7 +171,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Message:
 
-![image](/assets/images/feddbackformpt2.png)
+![image](/assets/images/feedback.png)
 
 - Submit Button triggers form validation and a thank-you message (e.g., “Thanks for your feedback!”)
 
