@@ -30,7 +30,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - I want to select my choice (Rock, Paper, Scissors, Lizard, or Spock) with a single tap or click, so gameplay feels fast and smooth.
 
-![image](/assets/images/buttonspng.png.png)
+![image](/assets/images/buttonspng.png)
 
 ![image](/assets/images/startbutton.png)
 
