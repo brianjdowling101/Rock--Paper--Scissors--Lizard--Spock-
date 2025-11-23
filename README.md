@@ -121,6 +121,8 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Main Game Area
 
+![image](/assets/images/mainbody.png)
+
 - Player Choice Buttons:
 
 - 5 interactive icons or buttons: 🤘 Rock, 📄 Paper, ✌️ Scissors, 🦎 Lizard, 🖖 Spock
