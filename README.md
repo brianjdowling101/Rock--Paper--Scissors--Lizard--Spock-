@@ -276,7 +276,7 @@ The game was designed with accessibility in mind, including:
 
 The game was designed to be fully responsive across devices and screen sizes.
 
-![image](/assets/images/i.am.iresponsive?.png)
+![image](/assets/images/i.am.iresponsive.png)
 
 🛠 **Manual & Stress Testing**
 
