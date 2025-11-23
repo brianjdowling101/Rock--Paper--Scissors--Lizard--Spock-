@@ -39,7 +39,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - I want clear instructions and feedback after every round.
 
-- I want to see my score update dynamically as I play.
+- I want to see my score update as I play.
 
 ## Site Owner Goals
 
@@ -67,15 +67,15 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Theme: Inspired by The Big Bang Theory’s pop-culture humor and Star Trek:
 
-- Colour Scheme: Bright and contrasting colors to reflect the playful tone of the game.
+- Colour Scheme: Bright and contrasting colours to reflect the playful tone of the game.
 
-- Typography: Clean sans-serif fonts for modern readability.
+- Typography: Clean fonts for modern readability.
 
 - Layout: Simple and centered design with clear buttons and score display.
 
 - Feedback: Dynamic results display (“You Win!”, “You Lose!”, “It’s a Tie!”) and score counters.
 
-- The interface embraces a sci-fi aesthetic. A clean lines, bold icons, and dynamic animations.
+- The interface embraces a sci-fi aesthetic. A clean lines, bold icons, and text/animations (Emojis).
 
 
 ## User Story Testing ✅
@@ -88,7 +88,7 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 - **Track score in real-time:** Verified the score updated correctly after each round. ✅ Pass
 
 ### Device & Interface Testing
-- **Mobile landscape mode support:** Opened the game on various mobile devices in landscape mode. ✅ Pass
+- **Mobile landscape mode support:** Opened the game on various mobile devices. ✅ Pass
 - **Responsive and visually engaging interface:** Tested layout on desktop, tablet, and mobile. ✅ Pass
 - **Clear instructions and feedback:** Played rounds and confirmed messages displayed correctly. ✅ Pass
 
@@ -147,15 +147,15 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Expandable or static box listing all rule interactions:
 
-- Rock crushes Scissors and Lizard
+- Rock crushes Scissors and Lizard.
 
-- Paper covers Rock and disproves Spock
+- Paper covers Rock and disproves Spock.
 
-- Scissors cuts Paper and decapitates Lizard
+- Scissors cuts Paper and decapitates Lizard.
 
-- Lizard eats Paper and poisons Spock
+- Lizard eats Paper and poisons Spock.
 
-- Spock smashes Scissors and vaporizes Rock
+- Spock smashes Scissors and vaporizes Rock.
 
 ![image](/assets/images/rules.png)
 
@@ -185,7 +185,7 @@ Here’s a visual representation of the layout and flow of the game:
 
 - **Note:** This wireframe was made using Microsoft Word and hand-drawn sketches. It illustrates the structure of the header, main game, rules section, feedback form.
 
-**⚠️ Note:** Based on user feedback, the "Play Again" button has **been removed** from the game interface.
+**⚠️ Note:** Based on user feedback from previous submissions, the "Play Again" button has **been removed** from the game interface.
 
 
 ## 🚀 Future Features
@@ -233,17 +233,16 @@ The game was designed with accessibility in mind, including:
 
 ✅ **Lighthouse Accessibility Audit & Improvements**
 
-- Previously, the website had **3 contrast-related accessibility errors** identified by the WAVE accessibility checker. These issues affected text readability, particularly in the headings. Add black padding to resolve the issue.
+- Previously, the website had **2 contrast-related accessibility errors** identified by the WAVE accessibility checker. These issues affected text readability, particularly in the headings. Add black padding to resolve the issue.
 
-- All **3 contrast issues have now been fully resolved**.  
+- All **2 contrast issues have now been fully resolved**.  
 - Text visibility and contrast have been improved across all areas to meet accessibility standards, ensuring a better experience for all users.
-
 
 - Designed for accessibility, it includes high-contrast colour schemes and readable fonts Lighthouse accessibility audit:
 
 - Previously, the website had 3 contrast-related accessibility errors identified by the WAVE accessibility checker. These issues affected text readability, particularly in the headings.
 
--All 3 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
+-All 2 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
 
 ![image](/assets/images/lighthousetesting.png)
 
@@ -346,7 +345,7 @@ The game was designed to be fully responsive across devices and screen sizes.
 
 - Real-time score tracking.
 
-- Instant round feedback (win, lose, draw).
+- Instant round feedback (win, lose, tie).
 
 - Rules display and accessibility.
 
