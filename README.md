@@ -125,6 +125,8 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - 5 interactive icons or buttons: 🤘 Rock, 📄 Paper, ✌️ Scissors, 🦎 Lizard, 🖖 Spock
 
+![image](/assets/images/buttonspng.png)
+
 - Each button triggers a JavaScript function to record the player’s choice.
 
 - Computer Choice Display:
@@ -137,7 +139,8 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - Ongoing Score Counter: Player vs Computer
 
-![image](/assets/images/buttonspng.png)
+![image](/assets/images/scoreboard.png)
+
 
 
 ### 3. Rules Section
