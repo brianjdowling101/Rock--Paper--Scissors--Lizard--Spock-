@@ -336,7 +336,7 @@ The game was designed to be fully responsive across devices and screen sizes.
 
 ### Manual Testing:
 
-- Tested on desktop, tablet, and mobile (including landscape mode).
+- Tested on desktop, tablet, and mobile.
 
 - Verified functionality in Chrome, Firefox, Edge, and Safari.
 
