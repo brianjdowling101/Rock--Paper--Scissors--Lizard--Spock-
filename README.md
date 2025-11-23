@@ -26,7 +26,15 @@ Built in Visual Studio using HTML, CSS, and JavaScript, this project brings a ch
 
 - I want to easily understand and access the game rules, so I can quickly learn how each move interacts with the others.
 
+![image](/assets/images/rules.png)
+
 - I want to select my choice (Rock, Paper, Scissors, Lizard, or Spock) with a single tap or click, so gameplay feels fast and smooth.
+
+![image](/assets/images/buttonspng.png.png)
+
+![image](/assets/images/startbutton.png)
+
+![image](/assets/images/resetbutton.png)
 
 - I want to see instant feedback (win, lose, or draw), so I know how I performed each round.
 
